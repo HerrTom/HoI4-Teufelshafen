@@ -1,0 +1,14 @@
+state={
+	id=76
+	name="STATE_76"
+	provinces={
+		22 152 186 207 360 438 623 710 883 1020 1123 1183 1218 1277 1529 1715 2199 2257 2591 2699 3037 3799 4075 4127 4133 4144 4147 4149 4156 4162 4166 4184 
+	}
+	manpower=10000
+    impassable=yes
+	buildings_max_level_factor=1.000
+    state_category = wasteland
+    history={
+		controller = EHO
+	}
+}

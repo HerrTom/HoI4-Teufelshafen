@@ -1,0 +1,17 @@
+
+state={
+	id=183
+	name="STATE_183"
+	provinces={
+		1150 2071 2943 4617 4681 4706 4745 4763 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= ORE
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= ORE
+	}
+}

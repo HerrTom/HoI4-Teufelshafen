@@ -1,0 +1,24 @@
+﻿capital = 55
+set_research_slots = 3
+
+set_popularities = {
+	democratic = 10
+	communism = 10
+	fascism = 55
+	neutrality = 25
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Admiral Arendt Drakenberg"
+	desc = "TEMP_DESC"
+	picture = "gfx/leaders/HJE/Portrait_Hjemland_Arendt Drakenberg.dds"
+	expire = "1912.6.20"
+	ideology = rexism
+}

@@ -1,0 +1,19 @@
+state={
+	id=108
+	name="STATE_108"
+	provinces={
+		688 1524 2209 2802 4072 4937 5101 5106 5131 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner = ETR
+        victory_points = {
+            5106 50
+        }
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of = ETR
+	}
+}

@@ -1,0 +1,16 @@
+state={
+	id=166
+	name="STATE_166"
+	provinces={
+		1735 3332 3951 5548 5562 5654 5692 5716 5740 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner = CLN
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of = CLN
+	}
+}

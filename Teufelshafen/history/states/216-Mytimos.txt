@@ -1,0 +1,21 @@
+
+state={
+	id=216
+	name="STATE_216"
+
+	history={
+		owner = EPT
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = EPT
+
+	}
+
+	provinces={
+		1326 1917 2425 4593 4622 4650 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

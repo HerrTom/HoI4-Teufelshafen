@@ -1,0 +1,16 @@
+state={
+	id=13
+	name="STATE_13"
+	provinces={
+		664 723 2849 4269 4288 4308 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= EHO
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= EHO
+	}
+}

@@ -1,0 +1,12 @@
+﻿l_english:
+ decision_category_erlenwald:0 "The Erlenwald"
+ decision_category_erlenwald_desc:0 "The forests of the Erlenwald are filled with natural resources, but are also teeming with danger."
+ hunt_monsters:0 "Hunt monsters"
+ hunt_monsters_desc:0 "Hire mercenaries to hunt for monsters in the Erlenwald. If they succeed, the area will become much safer!"
+ 
+ category_shadows_civil_war:0 "Shadows of the Civil War"
+ category_shadows_civil_war_desc:0 "The Khrebetian Civil War may have officially ended with the Truce of 1877, but fighting continues to this day."
+ border_raid_ivary:0 "Conduct raid in Ivary"
+ border_raid_ivary_desc:0 "Send troops to seize enemy equipment and sow chaos."
+ border_raid_saroliky:0 "Conduct raid in Saroliky"
+ border_raid_saroliky_desc:0 "Send troops to seize enemy equipment and sow chaos."

@@ -1,0 +1,17 @@
+state={
+	id=103
+	name="STATE_103"
+	provinces={
+		116 529 642 692 724 813 844 961 1389 1607 1748 1760 2096 2608 2644 2772 2784 3036 3566 3893 4099 4112 4113 4116 4117 4123 4126 4128 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+    state_category = rural
+    history={
+		owner= HEA
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= HEA
+	}
+}

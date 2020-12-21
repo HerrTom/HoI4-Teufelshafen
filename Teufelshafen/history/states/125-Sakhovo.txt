@@ -1,0 +1,19 @@
+state={
+	id=125
+	name="STATE_125"
+	provinces={
+		1173 1895 2824 3881 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= LED
+        victory_points = {
+            1895 10
+        }
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= LED
+	}
+}

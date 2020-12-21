@@ -1,0 +1,16 @@
+state={
+	id=86
+	name="STATE_86"
+	provinces={
+		329 1012 1806 1986 3234 3706 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= SLA
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= SLA
+	}
+}

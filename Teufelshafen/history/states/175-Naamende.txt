@@ -1,0 +1,17 @@
+
+state={
+	id=175
+	name="STATE_175"
+	provinces={
+		644 1094 1461 2018 3131 5567 5598 5623 5675 5700 5707 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= AUR
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= AUR
+	}
+}

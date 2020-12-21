@@ -1,0 +1,17 @@
+state={
+	id=34
+	name="STATE_34"
+	provinces={
+		484 1311 1318 1655 3840 4307 4332 
+	}
+	manpower58182
+	buildings_max_level_factor=1.000
+    state_category = rural
+    history={
+		owner= GAN
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= GAN
+	}
+}

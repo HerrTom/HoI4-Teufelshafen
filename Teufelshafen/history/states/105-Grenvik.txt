@@ -1,0 +1,18 @@
+
+state={
+	id=105
+	name="STATE_105"
+	provinces={
+		419 928 1259 1556 3330 3722 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    
+    history={
+		owner= SLA
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= SLA
+	}
+}

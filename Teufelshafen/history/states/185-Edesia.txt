@@ -1,0 +1,16 @@
+state={
+	id=185
+	name="STATE_185"
+	provinces={
+		121 309 705 1588 1612 1926 2718 4506 4539 4544 4558 4606 4637 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= ORE
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= ORE
+	}
+}

@@ -1,0 +1,16 @@
+state={
+	id=102
+	name="STATE_102"
+	provinces={
+		1584 4313 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= KHR
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= KHR
+	}
+}

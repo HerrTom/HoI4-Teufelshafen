@@ -1,0 +1,24 @@
+﻿capital = 46
+set_research_slots = 3
+
+set_popularities = {
+	democratic = 10
+	communism = 90
+	fascism = 0
+	neutrality = 0
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1897.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Union of Six"
+	desc = "TEMP_DESC"
+	picture = "gfx/leaders/UWS/Portrait_UWS_Union_of_Six.dds"
+	expire = "1999.1.1"
+	ideology = anarchist_communism
+}

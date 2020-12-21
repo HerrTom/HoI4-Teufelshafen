@@ -1,0 +1,20 @@
+state={
+	id=27
+	name="STATE_27"
+	provinces={
+		95 1704 3911 4399 4453 7827 
+	}
+	manpower=1853636
+	buildings_max_level_factor=1.000
+    state_category = city
+    history={
+		owner= GAN
+        victory_points = {
+            95 50
+        }
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= GAN
+	}
+}

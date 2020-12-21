@@ -1,0 +1,16 @@
+state={
+	id=155
+	name="STATE_155"
+	provinces={
+		290 2805 3200 3248 5153 5159 5186 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner = LAC
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of = LAC
+	}
+}

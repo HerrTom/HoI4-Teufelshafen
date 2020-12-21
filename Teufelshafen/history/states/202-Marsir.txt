@@ -1,0 +1,16 @@
+state={
+	id=202
+	name="STATE_202"
+	provinces={
+		588 1427 3194 4944 4977 4980 5032 5037 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= AUR
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= AUR
+	}
+}

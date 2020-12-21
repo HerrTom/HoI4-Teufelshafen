@@ -1,0 +1,16 @@
+state={
+	id=289
+	name="STATE_289"
+	provinces={
+		7785 7789 7792 7793 7795 7796 7798 7799 7800 7805 7806 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner = HEA
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of = HEA
+	}
+}

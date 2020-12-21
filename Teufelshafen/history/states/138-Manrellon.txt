@@ -1,0 +1,16 @@
+state={
+	id=138
+	name="STATE_138"
+	provinces={
+		2046 4033 5412 5515 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner = ILA
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of = ILA
+	}
+}

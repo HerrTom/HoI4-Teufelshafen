@@ -1,0 +1,17 @@
+
+state={
+	id=176
+	name="STATE_176"
+	provinces={
+		48 69 1116 1619 1766 1908 3132 3468 4737 4738 4742 4764 4765 4766 4831 4864 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= AUR
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= AUR
+	}
+}

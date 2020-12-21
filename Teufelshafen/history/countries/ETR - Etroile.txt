@@ -1,0 +1,16 @@
+﻿capital = 108
+set_research_slots = 2
+
+set_popularities = {
+	democratic = 25
+	communism = 0
+	fascism = 0
+	neutrality = 75
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}

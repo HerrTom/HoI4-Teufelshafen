@@ -1,0 +1,25 @@
+decision_category_erlenwald = {
+    hunt_monsters = {
+    icon = generic_political_actions
+        visible = {
+            OR = {
+                controls_state = 76
+                controls_state = 78
+            }
+        }
+        cost = 50
+        fixed_random_seed = no
+        days_re_enable = 30
+        fire_only_once = no
+        complete_effect = {
+            random_list = {
+				60 = {
+					army_experience = 10
+				}
+				40 = {
+					add_manpower = -50
+				}
+			}
+        }
+    }
+}

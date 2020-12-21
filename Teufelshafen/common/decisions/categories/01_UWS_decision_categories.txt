@@ -1,0 +1,6 @@
+category_shadows_civil_war = {
+    icon = decision_border_war
+    allowed = {
+		original_tag = UWS
+	}
+}

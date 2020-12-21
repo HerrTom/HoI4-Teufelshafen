@@ -1,0 +1,19 @@
+state={
+	id=89
+	name="STATE_89"
+	provinces={
+		963 2041 2762 3797 4343 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+    history={
+		owner= KHR
+        victory_points = {
+            4343 50
+        }
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= KHR
+	}
+}

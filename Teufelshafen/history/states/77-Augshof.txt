@@ -1,0 +1,17 @@
+state={
+	id=77
+	name="STATE_77"
+	provinces={
+		36 624 781 890 990 1002 1510 2527 2869 4182 4202 4209 4232 
+	}
+	manpower=30000
+	buildings_max_level_factor=1.000
+    state_category = rural
+    history={
+		owner= EHO
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= EHO
+	}
+}

@@ -1,0 +1,16 @@
+state={
+	id=87
+	name="STATE_87"
+	provinces={
+		1535 1838 1979 4739 4846 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= SLA
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= SLA
+	}
+}

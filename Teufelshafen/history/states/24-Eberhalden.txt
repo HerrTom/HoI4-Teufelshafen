@@ -1,0 +1,21 @@
+
+state={
+	id=24
+	name="STATE_24"
+	provinces={
+		344 1316 3110 4192 4235 
+	}
+	manpower=80000
+	buildings_max_level_factor=1.000
+    state_category = town
+    history={
+		owner= EHO
+        victory_points = {
+            1316 10
+        }
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= EHO
+	}
+}

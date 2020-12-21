@@ -1,0 +1,16 @@
+state={
+	id=230
+	name="STATE_230"
+	provinces={
+		573 794 1738 4921 4935 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= ODV
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= ODV
+	}
+}

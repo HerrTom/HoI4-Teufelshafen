@@ -1,0 +1,14 @@
+state={
+	id=78
+	name="STATE_78"
+	provinces={
+		18 166 475 505 567 572 658 768 902 993 998 1093 1203 1432 1440 1974 2630 2830 3049 3179 3239 3370 3450 3470 3550 3896 4124 4131 4134 4142 4151 4152 4160 4163 4164 4183 4191 4197 4203 4219 
+	}
+	manpower=15000
+    impassable=yes
+	buildings_max_level_factor=1.000
+    state_category = wasteland
+    history={
+		controller = EHO
+	}
+}

@@ -1,0 +1,16 @@
+state={
+	id=239
+	name="STATE_239"
+	provinces={
+		1907 2069 3593 6295 6309 6355 6437 7862 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= LAC
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= LAC
+	}
+}

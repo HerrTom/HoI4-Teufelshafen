@@ -1,0 +1,16 @@
+state={
+	id=273
+	name="STATE_273"
+	provinces={
+		93 912 1918 2412 2430 2607 2986 3477 6186 6252 6281 6290 6311 6354 6374 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= NAS
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= NAS
+	}
+}

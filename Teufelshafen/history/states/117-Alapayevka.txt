@@ -1,0 +1,20 @@
+
+state={
+	id=117
+	name="STATE_117"
+	provinces={
+		483 2566 4227 4245 4264 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= LES
+        victory_points = {
+            483 10
+        }
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= LES
+	}
+}

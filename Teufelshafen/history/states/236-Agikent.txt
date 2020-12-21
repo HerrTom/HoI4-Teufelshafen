@@ -1,0 +1,16 @@
+state={
+	id=236
+	name="STATE_236"
+	provinces={
+		2003 3180 3371 3592 3938 5343 5368 5370 5389 5433 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= DED
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= DED
+	}
+}

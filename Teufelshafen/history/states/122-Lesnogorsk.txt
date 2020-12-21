@@ -1,0 +1,19 @@
+state={
+	id=122
+	name="STATE_122"
+	provinces={
+		1021 4129 4130 4135 4136 4143 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= LED
+        victory_points = {
+            4129 30
+        }
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= LED
+	}
+}

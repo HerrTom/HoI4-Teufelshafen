@@ -1,0 +1,45 @@
+category_shadows_civil_war = {
+    border_raid_ivary = {
+        icon = GFX_decision_border_war
+        fire_only_once = no
+		days_re_enable = 30
+		days_remove = 7
+        visible = {
+			KHR = { exists = yes }
+		}
+        available = {
+            51 = { owned_by = KHR}
+        }
+        highlight_state_targets = { state = 51 }
+    }
+    
+    border_raid_saroliky = {
+        icon = GFX_decision_border_war
+        fire_only_once = no
+		days_re_enable = 30
+		days_remove = 7
+        visible = {
+			KHR = { exists = yes }
+		}
+        available = {
+            62 = { owned_by = KHR}
+        }
+        highlight_state_targets = { state = 62 }
+    }
+    
+    raid_shipping_zholivka = {
+        icon = GFX_decision_border_war
+        fire_only_once = no
+		days_re_enable = 30
+		days_remove = 7
+        visible = {
+			KHR = { exists = yes }
+		}
+        available = {
+            62 = { owned_by = KHR}
+        }
+        highlight_state_targets = { area = 4 }
+    }
+    
+    
+}

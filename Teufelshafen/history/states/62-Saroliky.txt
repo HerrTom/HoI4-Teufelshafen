@@ -1,0 +1,16 @@
+state={
+	id=62
+	name="STATE_62"
+	provinces={
+		1667 1696 1752 4278 4298 4316 4321 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= KHR
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= KHR
+	}
+}

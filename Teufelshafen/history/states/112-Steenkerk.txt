@@ -1,0 +1,16 @@
+state={
+	id=112
+	name="STATE_112"
+	provinces={
+		355 1236 5056 5180 5202 5238 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner = ETR
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of = ETR
+	}
+}

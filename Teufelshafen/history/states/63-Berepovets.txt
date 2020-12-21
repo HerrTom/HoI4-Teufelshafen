@@ -1,0 +1,20 @@
+
+state={
+	id=63
+	name="STATE_63"
+	provinces={
+		164 314 2396 3412 3580 4296 4306 4326 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= KHR
+        victory_points = {
+            3412 10
+        }
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= KHR
+	}
+}

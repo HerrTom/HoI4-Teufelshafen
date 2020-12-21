@@ -1,0 +1,16 @@
+state={
+	id=80
+	name="STATE_80"
+	provinces={
+		330 798 1086 1214 1319 1573 1880 2582 2594 2759 4141 4159 4170 
+	}
+	manpower=12000
+	buildings_max_level_factor=1.000
+    state_category = pastoral
+    history={
+		owner= EHO
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= EHO
+}

@@ -1,0 +1,3 @@
+decision_category_erlenwald = {
+     icon = generic_political_actions
+}

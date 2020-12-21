@@ -1,0 +1,16 @@
+state={
+	id=278
+	name="STATE_278"
+	provinces={
+		2204 6175 6235 6244 6282 6298 6325 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= NAS
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= NAS
+	}
+}

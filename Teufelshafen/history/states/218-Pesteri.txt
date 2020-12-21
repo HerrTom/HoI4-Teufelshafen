@@ -1,0 +1,16 @@
+state={
+	id=218
+	name="STATE_218"
+	provinces={
+		671 3293 4470 4513 4571 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= EPT
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= EPT
+	}
+}

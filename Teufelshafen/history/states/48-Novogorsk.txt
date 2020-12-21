@@ -1,0 +1,19 @@
+state={
+	id=48
+	name="STATE_48"
+	provinces={
+		17 953 2129 3258 4429 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= UWS
+        victory_points = {
+            2129 25
+        }
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= UWS
+	}
+}

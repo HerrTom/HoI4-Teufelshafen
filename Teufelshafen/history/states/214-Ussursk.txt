@@ -1,0 +1,19 @@
+state={
+	id=214
+	name="STATE_214"
+	provinces={
+		4221 7812 7813 7817 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= LES
+        victory_points = {
+            4221 10
+        }
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= LES
+	}
+}

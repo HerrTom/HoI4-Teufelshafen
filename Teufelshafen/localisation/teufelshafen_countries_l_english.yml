@@ -1,0 +1,91 @@
+﻿l_english:
+ TST_fascism:0 "Test Country"
+ TST_fascism_DEF:0 "Test Country"
+ TST_democratic:0 "Test Country"
+ TST_democratic_DEF:0 "Test Country"
+ TST_neutrality:1 "Test Country"
+ TST_neutrality_DEF:1 "Test Country"
+ TST_communism:0 "Test Country"
+ TST_communism_DEF:0 "Test Country"
+ TST_fascism_ADJ:0 "Test Country"
+ TST_democratic_ADJ:0 "Test Country"
+ TST_neutrality_ADJ:0 "Test Country"
+ TST_communism_ADJ:0 "Test Country"
+ 
+ EHO_democratic:0 "Republic of Holingen"
+ EHO_democratic_DEF:0 "Holinger Republic"
+ EHO_neutrality:0 "Empire of Holingen"
+ EHO_neutrality_DEF:0 "Imperial Holingen"
+ EHO_ADJ:0 "Holinger"
+ 
+ UWS_communism:0 "United Workers Syndicates"
+ UWS_communism_DEF:0 "United Workers Syndicate"
+ UWS_communism_ADJ:0 "Syndicate"
+ 
+ KHR_democratic:0 "Khrebetian Republic"
+ KHR_democratic_DEF:0 "Khrebetian Republic"
+ KHR_ADJ:0 "Khrebetian"
+ 
+ AUR_democratic:0 "Republic of Aurren"
+ AUR_democratic_DEF:0 "Republic of Aurren"
+ AUR_ADJ:0 "Aurrish"
+ 
+ WOD_democratic:0 "Wodziborz"
+ WOD_ADJ:0 "Wodziborish"
+ 
+ GAN_neutrality:0 "Gansernsee"
+ GAN_ADJ:0 "Gansern"
+ 
+ CAD_democratic:0 "Cadeipain Republic"
+ CAD_ADJ:0 "Cadeish"
+ 
+ ILA_neutrality:0 "Kingdom of Ilanurra"
+ ILA_ADJ:0 "Ilanurran"
+ 
+ HJE_fascism:0 "Hjemland"
+ HJE_ADJ:0 "Hjemish"
+ 
+ SLA_democratic:0 "Slatthjart"
+ SLA_ADJ:0 "Slatch"
+ 
+ LAC_neutrality:0 "Lacienega"
+ LAC_ADJ:0 "Lacienegan"
+ 
+ ETR_neutrality:0 "Etroile"
+ ETR_ADJ:0 "Etroilan"
+ 
+ CLN_fascism:0 "Collinia"
+ CLN_ADJ:0 "Collinian"
+ 
+ ORE_democratic:0 "Republic of Oreiktasi"
+ ORE_ADJ:0 "Oreiktasian"
+ 
+ HEA_neutrality:0 "Hearadh"
+ HEA_ADJ:0 "Hearish"
+ 
+ EPT_fascism:0 "Eptakoilades"
+ EPT_ADJ:0 "Eptakoiladian"
+ 
+ KRI_neutrality:0 "Krija"
+ KRI_ADJ:0 "Krijan"
+ 
+ ZRA_neutrality:0 "Zradvia"
+ ZRA_ADJ:0 "Zradvian"
+ 
+ ODV_neutrality:0 "Odvodia"
+ ODV_ADJ:0 "Odvodian"
+ 
+ LES_neutrality:0 "Leschad"
+ LES_ADJ:0 "Leschadian"
+ 
+ LED_neutrality:0 "Ledyania"
+ LED_ADJ:0 "Ledyanian"
+ 
+ DED:0 "Dedekiye"
+ DED_ADJ:0 "Dedekish"
+ 
+ NAB:0 "Nabaqan Empire"
+ NAB_ADJ:0 "Nabaqi"
+ 
+ NAS:0 "Sultanate of Nassar"
+ NAS_ADJ:0 "Nassari"

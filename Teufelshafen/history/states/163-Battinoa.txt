@@ -1,0 +1,19 @@
+state={
+	id=163
+	name="STATE_163"
+	provinces={
+		184 3954 5608 5639 5676 5677 5687 5739 5753 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner = CLN
+        victory_points = {
+            5639 50
+        }
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of = CLN
+	}
+}

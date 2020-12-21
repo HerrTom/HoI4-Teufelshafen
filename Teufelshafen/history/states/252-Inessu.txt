@@ -1,0 +1,16 @@
+state={
+	id=252
+	name="STATE_252"
+	provinces={
+		1695 2191 2388 5502 5533 5554 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= DED
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= DED
+	}
+}

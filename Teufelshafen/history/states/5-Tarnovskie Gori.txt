@@ -1,0 +1,16 @@
+state={
+	id=5
+	name="STATE_5"
+	provinces={
+		1388 2488 3507 4367 4385 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= UWS
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= UWS
+	}
+}

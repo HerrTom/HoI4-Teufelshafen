@@ -1,0 +1,24 @@
+﻿capital = 247
+set_research_slots = 2
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 10
+	neutrality = 90
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Kareem El Nabaqan II"
+	desc = "TEMP_DESC"
+	picture = "gfx/leaders/NAB/Portrait_Nabaqan_Kareem_El_Nabaqan.dds"
+	expire = "1920.2.16"
+	ideology = despotism
+}

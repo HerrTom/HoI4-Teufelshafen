@@ -1,0 +1,25 @@
+﻿capital = 84
+set_research_slots = 2
+
+set_popularities = {
+	democratic = 70
+	communism = 25
+	fascism = 0
+	neutrality = 5
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+
+create_country_leader = {
+	name = "Gustav Viken"
+	desc = "TEMP_DESC"
+	picture = "gfx/leaders/SLA/Portrait_Slatthjart_Gustav_Viken.dds"
+	expire = "1902.8.8"
+	ideology = socialism
+}

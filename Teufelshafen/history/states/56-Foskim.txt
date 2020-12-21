@@ -1,0 +1,16 @@
+state={
+	id=56
+	name="STATE_56"
+	provinces={
+		303 1155 2580 3575 4607 4647 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner = HJE
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of = HJE
+	}
+}

@@ -1,0 +1,16 @@
+state={
+	id=116
+	name="STATE_116"
+	provinces={
+		23 147 1949 2135 2325 2350 3839 3990 5420 5616 5701 5767 5788 5846 5865 5870 
+	}
+	manpower=0
+	buildings_max_level_factor=1.00
+    history={
+		owner = LAC
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of = LAC
+	}
+}

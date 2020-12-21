@@ -1,0 +1,20 @@
+state={
+	id=32
+	name="STATE_32"
+	provinces={
+		158 1072 1140 1563 1901 1975 2083 2552 4280 4287 4290 4301 
+	}
+	manpower=256364
+	buildings_max_level_factor=1.000
+    state_category = town
+    history={
+		owner= GAN
+        victory_points = {
+            1140 10
+        }
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= GAN
+	}
+}

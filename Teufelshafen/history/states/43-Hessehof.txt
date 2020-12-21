@@ -1,0 +1,17 @@
+state={
+	id=43
+	name="STATE_43"
+	provinces={
+		1190 1410 1444 1964 2760 3055 4268 4305 
+	}
+	manpower=41000
+	buildings_max_level_factor=1.000
+    state_category = rural
+    history={
+		owner= EHO
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= EHO
+	}
+}

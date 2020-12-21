@@ -1,0 +1,16 @@
+state={
+	id=228
+	name="STATE_228"
+	provinces={
+		210 702 2833 2936 4820 4850 4885 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= ZRA
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= ZRA
+	}
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=257
+	name="STATE_257"
+
+	history={
+		owner = NAB
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = NAB
+
+	}
+
+	provinces={
+		750 978 2081 3411 5291 5333 5337 5381 5446 5447 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

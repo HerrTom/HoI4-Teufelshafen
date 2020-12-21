@@ -1,0 +1,16 @@
+state={
+	id=36
+	name="STATE_36"
+	provinces={
+		568 606 2024 3646 4214 4238 4255 
+	}
+	manpower=26600
+	buildings_max_level_factor=1.000
+    state_category = rural
+    history={
+		controller = EHO
+		buildings = {
+			infrastructure = 4
+        }
+	}
+}

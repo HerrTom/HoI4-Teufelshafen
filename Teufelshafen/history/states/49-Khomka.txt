@@ -1,0 +1,19 @@
+state={
+	id=49
+	name="STATE_49"
+	provinces={
+		936 1890 2012 3966 4467 4492 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= UWS
+        victory_points = {
+            2012 10
+        }
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= UWS
+	}
+}

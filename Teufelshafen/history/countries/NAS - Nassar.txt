@@ -1,0 +1,31 @@
+﻿capital = 266
+set_research_slots = 2
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 10
+	neutrality = 90
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Nassar_V"
+	desc = "TEMP_DESC"
+	picture = "gfx/leaders/NAS/Portrait_Nassar_Nassar_V.dds"
+	expire = "1908.12.25"
+	ideology = despotism
+}
+create_country_leader = {
+	name = "Nassar VI"
+	desc = "TEMP_DESC"
+	picture = "gfx/leaders/NAS/Portrait_Nasser_Nasser_VI.dds"
+	expire = "1950.6.18"
+	ideology = rexism
+}

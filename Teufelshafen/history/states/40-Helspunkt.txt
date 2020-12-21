@@ -1,0 +1,16 @@
+state={
+	id=40
+	name="STATE_40"
+	provinces={
+		514 943 1137 1455 1884 2435 3372 
+	}
+	manpower=16600
+	buildings_max_level_factor=1.000
+    state_category = pastoral
+    history={
+		controller = EHO
+		buildings = {
+			infrastructure = 4
+        }
+	}
+}

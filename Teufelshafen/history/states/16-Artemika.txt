@@ -1,0 +1,20 @@
+
+state={
+	id=16
+	name="STATE_16"
+	provinces={
+		491 2881 3711 4384 4402 4416 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= UWS
+        victory_points = {
+            4384 25
+        }
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= UWS
+	}
+}

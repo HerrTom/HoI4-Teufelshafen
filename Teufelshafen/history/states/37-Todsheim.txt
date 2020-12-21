@@ -1,0 +1,18 @@
+
+state={
+	id=37
+	name="STATE_37"
+	provinces={
+		500 509 1042 2011 2225 4069 4193 4194 4231 
+	}
+	manpower=22500
+	buildings_max_level_factor=1.000
+    state_category = pastoral
+    history={
+		owner= EHO
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= EHO
+	}
+}

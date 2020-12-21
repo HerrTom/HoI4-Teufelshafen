@@ -1,0 +1,24 @@
+﻿capital = 131
+set_research_slots = 3
+
+set_popularities = {
+	democratic = 5
+	communism = 0
+	fascism = 20
+	neutrality = 75
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Francisco III"
+	desc = "TEMP_DESC"
+	picture = "gfx/leaders/ILA/Portrait_Ilanurra_Francisco_III.dds"
+	expire = "1921.5.5"
+	ideology = despotism
+}

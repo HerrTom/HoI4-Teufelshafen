@@ -1,0 +1,16 @@
+state={
+	id=127
+	name="STATE_127"
+	provinces={
+		434 1448 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= HEA
+		buildings = {
+			infrastructure = 4
+        }
+        add_core_of= HEA
+	}
+}

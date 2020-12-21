@@ -1,0 +1,16 @@
+state={
+	id=71
+	name="STATE_71"
+	provinces={
+		183 452 895 1374 4418 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= CAD
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= CAD
+	}
+}

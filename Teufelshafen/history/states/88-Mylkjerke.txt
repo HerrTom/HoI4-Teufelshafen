@@ -1,0 +1,17 @@
+
+state={
+	id=88
+	name="STATE_88"
+	provinces={
+		830 1164 1558 2240 2301 2831 3329 4626 4654 4655 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner = SLA
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of = SLA
+	}
+}

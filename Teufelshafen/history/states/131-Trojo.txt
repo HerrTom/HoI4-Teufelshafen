@@ -1,0 +1,20 @@
+
+state={
+	id=131
+	name="STATE_131"
+	provinces={
+		296 1449 2189 2447 4079 5064 5088 5125 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner = ILA
+        victory_points = {
+            5088 50
+        }
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of = ILA
+	}
+}

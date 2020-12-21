@@ -1,0 +1,16 @@
+state={
+	id=84
+	name="STATE_84"
+	provinces={
+		176 1127 2549 3428 3886 4675 4687 4703 4731 4732 4774 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+    history={
+		owner= SLA
+		buildings = {
+			infrastructure = 4
+        }
+    add_core_of= SLA
+	}
+}
