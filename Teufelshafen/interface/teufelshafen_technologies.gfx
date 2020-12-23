@@ -1,0 +1,72 @@
+spriteTypes = {	
+   ### ARCHETYPES
+   SpriteType = {
+		name = "archetype_service_rifle"
+		texturefile = "gfx/interface/technologies/archetype_service_rifle.dds"
+	}
+   SpriteType = {
+		name = "archeytpe_machine_gun"
+		texturefile = "gfx/interface/technologies/archetype_machine_gun.dds"
+	}
+   SpriteType = {
+		name = "archetype_mortar"
+		texturefile = "gfx/interface/technologies/archetype_mortar.dds"
+	}
+
+    ### Service Rifles
+	SpriteType = {
+		name = "GFX_tech_service_rifle_medium"
+		texturefile = "gfx/interface/technologies/gen_service_rifle_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_service_rifle_1_medium"
+		texturefile = "gfx/interface/technologies/gen_service_rifle_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_service_rifle_2_medium"
+		texturefile = "gfx/interface/technologies/gen_service_rifle_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_service_rifle_3_medium"
+		texturefile = "gfx/interface/technologies/gen_service_rifle_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_smokeless_powder_medium"
+		texturefile = "gfx/interface/technologies/tech_ammo_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_full_metal_jacket_medium"
+		texturefile = "gfx/interface/technologies/tech_ammo_2.dds"
+	}
+    SpriteType = {
+		name = "GFX_tech_improved_ammunition_medium"
+		texturefile = "gfx/interface/technologies/tech_ammo_2.dds"
+	}
+    ### Machine Guns
+	SpriteType = {
+		name = "GFX_tech_machine_gun_medium"
+		texturefile = "gfx/interface/technologies/gen_machine_gun_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_machine_gun_1_medium"
+		texturefile = "gfx/interface/technologies/gen_machine_gun_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_machine_gun_2_medium"
+		texturefile = "gfx/interface/technologies/gen_machine_gun_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_machine_gun_3_medium"
+		texturefile = "gfx/interface/technologies/gen_machine_gun_3.dds"
+	}
+    
+    ### Mortars
+	SpriteType = {
+		name = "GFX_tech_mortar_medium"
+		texturefile = "gfx/interface/technologies/gen_mortar_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_mortar_1_medium"
+		texturefile = "gfx/interface/technologies/gen_mortar_1.dds"
+	}
+}

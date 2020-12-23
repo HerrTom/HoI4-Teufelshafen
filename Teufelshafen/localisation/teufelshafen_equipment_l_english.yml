@@ -1,0 +1,61 @@
+﻿l_english:
+ # Service Rifles
+ service_rifle:0 "Service Rifle"
+ service_rifle_0:0 "Breech Loading Rifle"
+ service_rifle_1:0 "Bolt Action Rifle"
+ service_rifle_2:0 "Bolt Action Carbine"
+ service_rifle_3:0 "Improved Bolt Action Carbine"
+ # Tech names
+ tech_service_rifle:0 "Breech Loading Rifle"
+ tech_service_rifle_1:0 "Bolt Action Rifle"
+ tech_smokeless_powder:0 "Smokeless Powder Cartridge"
+ tech_service_rifle_2:0 "Bolt Action Carbine"
+ tech_full_metal_jacket:0 "Full Metal Jacket Cartridge"
+ tech_service_rifle_3:0 "Improved Bolt Action Carbine"
+ tech_improved_ammunition:0 "Improved Ammunition"
+ 
+ # Machine Guns
+ machine_gun:0 "Machine Gun"
+ machine_gun_0:0 "Hand Cranked Machine Gun"
+ machine_gun_1:0 "Early Machine Gun"
+ machine_gun_2:0 "Heavy Machine Gun"
+ machine_gun_3:0 "General Purpose Machine Gun"
+ # tech names
+ tech_machine_gun:0 "Machine Gun"
+ tech_machine_gun_0:0 "Hand Cranked Machine Gun"
+ tech_machine_gun_1:0 "Early Machine Gun"
+ tech_machine_gun_2:0 "Heavy Machine Gun"
+ tech_machine_gun_3:0 "General Purpose Machine Gun"
+ # Units
+ machine_gun_battalion:0 "Machine Gun Battalion"
+ machine_gun_company:0 "Machine Gun Company"
+ 
+ # Machine Guns
+ mortar:0 "Mortar"
+ mortar_0:0 "Early Mortar"
+ mortar_1:0 "Improved Mortar"
+ # tech names
+ tech_mortar:0 "Early Mortar"
+ tech_mortar_1:0 "Improved Mortar"
+ mortar_battalion:0 "Mortar Battalion"
+ mortar_company:0 "Mortar Battery"
+ 
+ 
+ # Holingen localisation
+ EHO_service_rifle_0:0 "Gewehr 1873"
+ EHO_service_rifle_1:0 "Gewehr 1891"
+ EHO_service_rifle_2:0 "Gewehr 1891k"
+ EHO_service_rifle_3:0 "Karabiner M91/20"
+ EHO_service_rifle_0_short:0 "G.1873"
+ EHO_service_rifle_1_short:0 "G.1891"
+ EHO_service_rifle_2_short:0 "G.1891k"
+ EHO_service_rifle_3_short:0 "M91/20"
+ 
+ EHO_machine_gun_0:0 "Neufeld Rotary Gun"
+ EHO_machine_gun_1:0 "Maschinengewehr 95"
+ EHO_machine_gun_2:0 "Maschinengewehr 08"
+ EHO_machine_gun_3:0 "Maschinengewehr 08/20"
+ EHO_machine_gun_0:0 "Neufeld Gun"
+ EHO_machine_gun_1:0 "MG 95"
+ EHO_machine_gun_2:0 "MG 08"
+ EHO_machine_gun_3:0 "MG 08/20"
