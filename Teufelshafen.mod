@@ -1,5 +1,5 @@
 name="Teufelshafen"
-path="mod/Teufelshafen"
+path="mod/HoI4-Teufelshafen"
 replace_path="common/ai_peace"
 replace_path="common/ai_strategy"
 replace_path="common/ai_strategy_plans"

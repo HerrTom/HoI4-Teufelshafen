@@ -1,0 +1,18 @@
+defined_text = {
+	name = Get_Pretty_GDP
+	text = {
+		trigger = {
+			check_variable = { GDP < 1 }
+		}
+		localization_key = GDP_top_thousands
+	}
+	text = {
+		trigger = {
+			check_variable = { GDP > 1000 }
+		}
+		localization_key = GDP_top_billions
+	}
+	text = {
+		localization_key = GDP_top_millions
+	}
+}

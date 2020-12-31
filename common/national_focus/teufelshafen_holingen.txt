@@ -1,0 +1,399 @@
+#!gfx:interface\teufelshafen_national_foci.gfx
+search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+	FOCUS_FILTER_RESEARCH = 522
+	FOCUS_FILTER_INDUSTRY = 509
+
+}
+
+focus_tree = {
+	id = EHO_focus_tree
+	
+	country = {
+        base = 0
+        modifier = {
+            add = 10
+            tag = EHO
+        }
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = EHO_the_ageing_kaiser
+    }
+    
+    continuous_focus_position = { x = 1 y = 1 }
+
+	focus = {
+		id = EHO_the_ageing_kaiser
+		icon = GFX_focus_generic_monarchy_1
+		x = 8
+		y = 0
+		cost = 1
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_succession_question
+		icon = GFX_focus_generic_monarchy_2
+		x = 8
+		y = 1
+		cost = 2
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_the_ageing_kaiser }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_preparing_for_the_future
+		icon = GFX_goal_generic_improve_relations
+		x = 8
+		y = 2
+		cost = 3
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_succession_question }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+
+    # The Navy tree
+    focus = {
+		id = EHO_kaiserliche_marine
+		icon = GFX_focus_generic_navy_battleship2
+		x = 20
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_preparing_for_the_future }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+
+    ### The army tree
+    focus = {
+		id = EHO_kaiserliche_landstreitkrafte
+		icon = GFX_goal_generic_small_arms
+        x = 15
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_preparing_for_the_future }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    
+    ### The social tree
+    focus = {
+		id = EHO_address_political_situation
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 8
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_preparing_for_the_future }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    ### Union subtree
+    focus = {
+		id = EHO_the_unions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 4.5
+		y = 4
+		cost = 2
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_address_political_situation }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_ban_unions
+		icon = GFX_focus_mex_arrest_general_cedillo
+		x = 3.5
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_the_unions }
+        mutually_exclusive = { focus = EHO_concessions }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_concessions
+		icon = GFX_goal_generic_major_alliance
+		x = 5.5
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_the_unions }
+        mutually_exclusive = { focus = EHO_ban_unions }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+
+    ### Monarchy subtree
+    focus = {
+		id = EHO_the_crown
+		icon = GFX_focus_hun_elect_a_king
+		x = 8
+		y = 4
+		cost = 2
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_address_political_situation }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_absolutism
+		icon = GFX_focus_generic_monarchy_1
+		x = 7
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_the_crown }
+        mutually_exclusive = { focus = EHO_constitutionalism }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_reign_in_electors
+		icon = GFX_focus_generic_concessions
+		x = 7
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_the_crown }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_constitutionalism
+		icon = GFX_focus_rom_handle_king
+		x = 9
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_the_crown }
+        mutually_exclusive = { focus = EHO_absolutism }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_write_constitution
+		icon = GFX_focus_generic_treaty
+		x = 9
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_constitutionalism }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+
+    ### Foreign relations tree
+    focus = {
+		id = EHO_diplomacy
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 12
+		y = 4
+		cost = 2
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_address_political_situation }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+
+    ### The Erlenwald tree
+
+    focus = {
+		id = EHO_the_erlenwald
+		icon = GFX_goal_eho_erlenwald
+		x = 1
+		y = 3
+		cost = 2
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_preparing_for_the_future }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_exploit_oil
+		icon = GFX_goal_generic_oil_refinery
+		x = 0
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_the_erlenwald }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_exploit_coal
+		icon = GFX_focus_generic_steel
+		x = 2
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_the_erlenwald }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_settlement
+		icon = GFX_goal_generic_construction2
+		x = 1
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_exploit_coal }
+        prerequisite = { focus = EHO_exploit_oil }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_fight_banditry
+		icon = GFX_goal_continuous_suppression
+		x = 0
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_settlement }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = EHO_fight_nature
+		icon = GFX_goal_generic_secret_weapon
+		x = 2
+		y = 6
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_settlement }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+    focus = {
+		id = eho_wild_hunt
+		icon = GFX_goal_eho_erlkonig
+		x = 1
+		y = 7
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+        available_if_capitulated = yes
+        
+        prerequisite = { focus = EHO_fight_nature }
+        prerequisite = { focus = EHO_fight_banditry }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+}

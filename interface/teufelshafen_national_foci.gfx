@@ -1,0 +1,13 @@
+spriteTypes = {	
+
+	#### Generic continuous goal icons
+
+	SpriteType = {
+	name = "GFX_goal_eho_erlenwald"
+	texturefile = "gfx/interface/goals/goal_focus_eho_erlenwald.dds"			
+    }	
+	SpriteType = {
+	name = "GFX_goal_eho_erlkonig"
+	texturefile = "gfx/interface/goals/goal_focus_eho_erlkonig.dds"			
+    }	
+}

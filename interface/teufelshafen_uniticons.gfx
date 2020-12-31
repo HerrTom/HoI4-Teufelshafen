@@ -1,0 +1,130 @@
+spriteTypes = {	
+	spriteType = {
+		name = "unit_machine_gun_company_icon_small"
+		texturefile = "gfx/texticons/nato_unit_machinegun_icon_small.dds"
+        legacy_lazy_load = no
+        noOfFrames = 2		
+	}
+    spriteType = { 
+        name = "GFX_unit_machine_gun_company_icon_medium"				
+        textureFile = "gfx/interface/counters/divisions_large/unit_machinegun_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = { 
+        name = "GFX_unit_machine_gun_company_icon_medium_white"						
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_machinegun_icon.dds" 
+        noOfFrames = 2
+    }
+	spriteType = {
+		name = "unit_mortar_company_icon_small"
+		texturefile = "gfx/texticons/nato_unit_mortar_icon_small.dds"
+        legacy_lazy_load = no
+        noOfFrames = 2	
+	}
+    spriteType = { 
+        name = "GFX_unit_mortar_company_icon_medium"				
+        textureFile = "gfx/interface/counters/divisions_large/unit_mortar_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = { 
+        name = "GFX_unit_mortar_battalion_icon_medium_white"						
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mortar_icon.dds" 
+        noOfFrames = 2
+    }
+    	spriteType = {
+		name = "unit_machine_gun_battalion_icon_small"
+		texturefile = "gfx/texticons/nato_unit_machinegun_icon_small.dds"
+        legacy_lazy_load = no
+        noOfFrames = 2	
+	}
+    spriteType = { 
+        name = "GFX_unit_machine_gun_battalion_icon_medium"				
+        textureFile = "gfx/interface/counters/divisions_large/unit_machinegun_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = { 
+        name = "GFX_unit_machine_gun_battalion_icon_medium_white"						
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_machinegun_icon.dds" 
+        noOfFrames = 2
+    }
+	spriteType = {
+		name = "unit_mortar_battalion_icon_small"
+		texturefile = "gfx/texticons/nato_unit_mortar_icon_small.dds"
+        legacy_lazy_load = no
+        noOfFrames = 2	
+	}
+    spriteType = { 
+        name = "GFX_unit_mortar_battalion_icon_medium"				
+        textureFile = "gfx/interface/counters/divisions_large/unit_mortar_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = { 
+        name = "GFX_unit_mortar_battalion_icon_medium_white"						
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mortar_icon.dds" 
+        noOfFrames = 2
+    }
+    spriteType = {
+		name = "GFX_unit_field_gun_company_icon_small"
+		texturefile = "gfx/texticons/unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+    spriteType = { 
+        name = "GFX_unit_field_gun_company_icon_medium"				
+        textureFile = "gfx/interface/counters/divisions_large/unit_artillery_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = { 
+        name = "GFX_unit_field_gun_company_icon_medium_white"						
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_artillery_icon.dds" 
+        noOfFrames = 2
+    }
+    spriteType = {
+		name = "GFX_unit_field_gun_battalion_icon_small"
+		texturefile = "gfx/texticons/unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+    spriteType = { 
+        name = "GFX_unit_field_gun_battalion_icon_medium"				
+        textureFile = "gfx/interface/counters/divisions_large/unit_artillery_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = { 
+        name = "GFX_unit_field_gun_battalion_icon_medium_white"						
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_artillery_icon.dds" 
+        noOfFrames = 2
+    }
+    spriteType = {
+		name = "GFX_unit_howitzer_company_icon_small"
+		texturefile = "gfx/texticons/nato_unit_howitzer_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+    spriteType = { 
+        name = "GFX_unit_howitzer_company_icon_medium"				
+        textureFile = "gfx/interface/counters/divisions_large/unit_howitzer_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = { 
+        name = "GFX_unit_howitzer_company_icon_medium_white"						
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_howitzer_icon.dds" 
+        noOfFrames = 2
+    }
+    spriteType = {
+		name = "GFX_unit_howitzer_battalion_icon_small"
+		texturefile = "gfx/texticons/nato_unit_howitzer_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+    spriteType = { 
+        name = "GFX_unit_howitzer_battalion_icon_medium"				
+        textureFile = "gfx/interface/counters/divisions_large/unit_howitzer_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = { 
+        name = "GFX_unit_howitzer_battalion_icon_medium_white"						
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_howitzer_icon.dds" 
+        noOfFrames = 2
+    }
+}

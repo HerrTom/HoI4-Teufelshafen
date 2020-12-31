@@ -1,0 +1,26 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country = {
+                every_owned_state = {
+                    generate_state_GDP = yes
+                }
+            }
+            every_country = {
+                calculate_GDP = yes
+            }
+        }
+    }
+    on_monthly = {
+        effect = {
+            every_country = {
+                every_owned_state = {
+                    generate_state_GDP = yes
+                }
+            }
+            every_country = {
+                calculate_GDP = yes
+            }
+        }
+    }
+}

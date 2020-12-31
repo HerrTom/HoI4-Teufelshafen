@@ -1,0 +1,20 @@
+generate_state_GDP = {
+    set_variable = { state_pop = state_population_k }
+    set_variable = { state_GDP = GDP_Capita?100 }
+    multiply_variable = { state_GDP = state_pop }
+    log = "[GetDateText]: generate_state_GDP@[THIS.GetName]: State GDP generated to [?state_GDP]"
+}
+
+calculate_GDP = {
+    set_variable = { GDP = 0 }
+	every_owned_state = {
+        add_to_variable = { PREV.GDP = state_GDP }
+        log = "[GetDateText]:      [THIS.GetName]: Added state GDP [?state_GDP] (for [PREV.GetName])"	
+    }
+    set_variable = { GDP_thousand = GDP }
+    multiply_variable = { GDP_thousand = 1000 }		
+    set_variable = { GDP_billion = GDP }
+    divide_variable = { GDP_billion = 1000 }
+    log = "[GetDateText]: calculate_GDP@[THIS.GetName]: Calculated GDP value: $[?GDP_thousand]k, $[?GDP]M, $[?GDP_billion]B"		
+
+}

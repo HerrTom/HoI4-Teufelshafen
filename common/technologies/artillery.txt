@@ -1,0 +1,146 @@
+#!gfx:interface\teufelshafen_technologies.gfx
+technologies = {
+
+	tech_field_gun = {
+
+		enable_equipments = {
+			field_gun_0
+		}
+        
+		enable_subunits = {
+			field_gun_battalion
+            field_gun_company
+		}
+		
+		path = {
+			leads_to_tech = tech_field_gun_1 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1870
+        
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+        }
+	}
+	tech_field_gun_1 = {
+
+		enable_equipments = {
+			field_gun_1
+		}
+		
+		path = {
+			leads_to_tech = tech_field_gun_2
+			research_cost_coeff = 1
+		}
+        
+        path = {
+			leads_to_tech = tech_howitzer
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+        start_year = 1890
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+        }
+	}
+    tech_field_gun_2 = {
+
+		enable_equipments = {
+			field_gun_0
+		}
+		
+		research_cost = 1.5
+        start_year = 1910
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+        }
+	}
+    
+    tech_howitzer = {
+
+		enable_equipments = {
+			howitzer_0
+		}
+        
+		enable_subunits = {
+			howitzer_battalion
+            howitzer_company
+		}
+        
+        path = {
+			leads_to_tech = tech_howitzer_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+        start_year = 1905
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+        }
+	}
+    
+    tech_howitzer_1 = {
+
+		enable_equipments = {
+			howitzer_1
+		}
+		
+		research_cost = 1.5
+        start_year = 1915
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 10 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+        }
+	}
+}
