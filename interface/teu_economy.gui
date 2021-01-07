@@ -1,0 +1,82 @@
+guiTypes = {
+    containerWindowType = {
+        name = "top_GDP"
+        position = { x=981 y=0 }
+        size = { width=100%% height=100%% }
+
+        ### GDP display
+
+        iconType = {
+            name ="top_GDP_bg"
+            spriteType = "GFX_generic_box_96"
+            position = { x=0 y=5 }
+            Orientation = "UPPER_LEFT"
+        }
+
+        iconType = {
+			name ="top_GDP_icon"
+			spriteType = "GFX_GDP_icon"
+			position = { x= 7 y=7 }
+			Orientation = "UPPER_LEFT"
+		}
+
+        instantTextboxType = {
+            name = "top_GDP"
+            position = { x = 22 y = 9 }
+            textureFile = ""
+            font = "hoi_18mbs"
+            borderSize = {x = 0 y = 0}
+            text = "GDP_top_bar"
+
+            maxWidth = 80
+            maxHeight = 24
+            format = center
+
+            pdx_tooltip = "economy_GDP_short_tt"
+            pdx_tooltip_delayed = "economy_GDP_long_tt"
+        }
+
+        ### Treasury display
+
+        iconType = {
+            name ="top_treasury_bg"
+            spriteType = "GFX_generic_box_96"
+            position = { x=100 y=5 }
+            Orientation = "UPPER_LEFT"
+        }
+
+        iconType = {
+			name ="top_treasury_icon"
+			spriteType = "GFX_GDP_icon"
+			position = { x= 107 y=7 }
+			Orientation = "UPPER_LEFT"
+		}
+
+        instantTextboxType = {
+            name = "top_treasury"
+            position = { x = 122 y = 9 }
+            textureFile = ""
+            font = "hoi_18mbs"
+            borderSize = {x = 0 y = 0}
+            text = "treasury_top_bar"
+
+            maxWidth = 80
+            maxHeight = 24
+            format = center
+
+            pdx_tooltip = "economy_treasury_short_tt"
+            pdx_tooltip_delayed = "economy_treasury_long_tt"
+        }
+        
+        buttonType = {
+            name = "econ_button"
+            quadTextureSprite ="GFX_topbar_technology"
+#				position = { x= -104 y = 0 }
+            position = { x= 210 y = 0 }
+            Orientation = "UPPER_LEFT"
+            shortcut = "e"
+            clicksound = click_close
+            oversound = ui_menu_over
+        }
+    }
+}

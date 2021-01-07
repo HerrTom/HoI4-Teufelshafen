@@ -1,0 +1,19 @@
+
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_GDP_icon"
+		texturefile = "gfx/interface/gdp_icon.dds"			
+    }
+	SpriteType = {
+		name = "GFX_GDP_texticon"
+		texturefile = "gfx/texticons/gdp_icon_20x20.dds"			
+	}
+	SpriteType = {
+		name = "GFX_econ_button"
+		texturefile = "gfx/interface/econ_button.dds"			
+    }
+	SpriteType = {
+		name = "GFX_econ_equipment_button"
+		texturefile = "gfx/interface/econ_equipment_button.dds"			
+    }
+}

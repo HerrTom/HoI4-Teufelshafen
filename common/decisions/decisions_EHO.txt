@@ -1,6 +1,6 @@
 decision_category_erlenwald = {
     hunt_monsters = {
-    icon = generic_political_actions
+        icon = generic_political_actions
         visible = {
             OR = {
                 controls_state = 76

@@ -5,13 +5,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/archetype_service_rifle.dds"
 	}
    SpriteType = {
-		name = "archeytpe_machine_gun"
+		name = "archetype_machine_gun"
 		texturefile = "gfx/interface/technologies/archetype_machine_gun.dds"
 	}
    SpriteType = {
 		name = "archetype_mortar"
 		texturefile = "gfx/interface/technologies/archetype_mortar.dds"
 	}
+	SpriteType = {
+		 name = "archetype_field_gun"
+		 texturefile = "gfx/interface/technologies/gen_field_gun_1.dds" # change me!
+	 }
+	 SpriteType = {
+		  name = "archetype_howitzer"
+		  texturefile = "gfx/interface/technologies/gen_howitzer_0.dds" # change me!
+	  }
 
     ### Service Rifles
 	SpriteType = {

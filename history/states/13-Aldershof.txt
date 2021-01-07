@@ -4,7 +4,8 @@ state={
 	provinces={
 		664 723 2849 4269 4288 4308 
 	}
-	manpower=0
+	manpower=60000
+	state_category = rural
 	buildings_max_level_factor=1.000
     history={
 		owner= EHO

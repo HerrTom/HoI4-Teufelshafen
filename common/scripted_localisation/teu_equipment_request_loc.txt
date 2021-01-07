@@ -1,0 +1,73 @@
+defined_text = {
+	name = GetServiceRifleName
+	text = {
+		trigger = {
+			OR = {
+				tag = EHO
+				tag = GAN
+			}
+		}
+		localization_key = "\"[GetDesignerShort] G.[GetYear]\""
+	}
+	text = {
+		localization_key = "\"[GetDesignerShort] M[GetYear]\""
+	}
+}
+defined_text = {
+	# Gets the primary designer name for equipment designs
+	name = GetDesignerShort
+	text = {
+		trigger = {
+			tag = EHO
+			check_variable = { ROOT.designer = 0 }
+		}
+		localization_key = "M&V"
+	}
+	text = {
+		trigger = {
+			tag = EHO
+			check_variable = { ROOT.designer = 1 }
+		}
+		localization_key = "Vogel"
+	}	
+	# Fallbacks
+	text = {
+		trigger = {
+			check_variable = { ROOT.designer = 1 }
+		}
+		localization_key = "BuA"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { ROOT.designer = 0 }
+		}
+		localization_key = "Albion"
+	}
+}
+
+defined_text = {
+	# Gets the primary designer name for equipment designs
+	name = GetDesignerA
+	text = {
+		trigger = {
+			tag = EHO
+		}
+		localization_key = "Messing & Vorster"
+	}
+	text = {
+		localization_key = "Albion Ltd."
+	}
+}
+
+defined_text = {
+	# Gets the secondary design company name for equipment designs
+	name = GetDesignerB
+	text = {
+		trigger = {	tag = EHO }
+		localization_key = "Vogel Stahlwerk"
+	}
+	text = {
+		localization_key = "Burr Arsenal"
+	}
+}

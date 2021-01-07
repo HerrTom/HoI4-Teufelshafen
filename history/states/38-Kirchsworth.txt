@@ -4,11 +4,11 @@ state={
 	provinces={
 		154 734 4171 4175 4180 4181 4185 7815 
 	}
-	manpower=0
+	manpower=30000
 	buildings_max_level_factor=1.000
     state_category = pastoral
     history={
-		controller = EHO
+		owner = EHO
 		buildings = {
 			infrastructure = 4
         }

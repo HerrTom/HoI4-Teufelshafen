@@ -112,6 +112,214 @@ units = {
 		division_template = "Infanteriedivision"
 		start_experience_factor = 0.3
 	}
+    division = {
+		name = "11. Infanteriedivision"
+		location = 2632
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "12. Infanteriedivision"
+		location = 713
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "13. Infanteriedivision"
+		location = 1216
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "14. Infanteriedivision"
+		location = 1991
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "15. Infanteriedivision"
+		location = 1246
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.3
+	}
+
+	### Garrison divisions
+    division = {
+		name = "1. Schützerregiment"
+		location = 3215
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "2. Schützerregiment"
+		location = 4284
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "3. Schützerregiment"
+		location = 3957
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "4. Schützerregiment"
+		location = 7814
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "5. Schützerregiment"
+		location = 1066
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "6. Schützerregiment"
+		location = 410
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "7. Schützerregiment"
+		location = 2176
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "8. Schützerregiment"
+		location = 4229
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "9. Schützerregiment"
+		location = 3238
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "10. Schützerregiment"
+		location = 4216
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "11. Schützerregiment"
+		location = 4178
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "12. Schützerregiment"
+		location = 1549
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "13. Schützerregiment"
+		location = 4201
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "14. Schützerregiment"
+		location = 4240
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "15. Schützerregiment"
+		location = 4218
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "16. Schützerregiment"
+		location = 2751
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "17. Schützerregiment"
+		location = 882
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "18. Schützerregiment"
+		location = 1573
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "19. Schützerregiment"
+		location = 708
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "20. Schützerregiment"
+		location = 1247
+		division_template = "Schützerregiment"
+		start_experience_factor = 0.3
+	}
+
+	## East Garrison
+    division = {
+		name = "21. Ostschützerregiment"
+		location = 1896
+		division_template = "Ostschützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "22. Ostschützerregiment"
+		location = 2024
+		division_template = "Ostschützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "23. Ostschützerregiment"
+		location = 4283
+		division_template = "Ostschützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "24. Ostschützerregiment"
+		location = 4180
+		division_template = "Ostschützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "25. Ostschützerregiment"
+		location = 1634
+		division_template = "Ostschützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "26. Ostschützerregiment"
+		location = 943
+		division_template = "Ostschützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "27. Ostschützerregiment"
+		location = 943
+		division_template = "Ostschützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "28. Ostschützerregiment"
+		location = 1896
+		division_template = "Ostschützerregiment"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "29. Ostschützerregiment"
+		location = 1896
+		division_template = "Ostschützerregiment"
+		start_experience_factor = 0.3
+	}
 }
 
 ### Starting Equipment ###

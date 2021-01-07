@@ -1,0 +1,136 @@
+add_namespace = equipment_design
+
+country_event = {
+	id = equipment_design.0
+	title = equipment_design.0.t
+	desc = equipment_design.0.d
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { has_tech = "tech_service_rifle_3" }
+			set_variable = { eq_level = 3 }
+		}
+		else_if = {
+			limit = { has_tech = "tech_service_rifle_2" }
+			set_variable = { eq_level = 2 }
+		}
+		else_if = {
+			limit = { has_tech = "tech_service_rifle_1" }
+			set_variable = { eq_level = 1 }
+		}
+		else = {
+			set_variable = { eq_level = 0 }
+		}
+
+		# log = "[THIS.GetName] : Service Rifle Design Event (Service Rifle [?eq_level]: [GetServiceRifleName]) "
+		
+		# Equipment design A
+		# Equipment upgrades are currently random
+		randomize_variable = {
+			var = ROOT.eq_rel_a
+			distribution = uniform
+			min = 1
+			max = 10
+		}
+		randomize_variable = {
+			var = ROOT.eq_acc_a
+			distribution = uniform
+			min = 1
+			max = 10
+		}
+		randomize_variable = {
+			var = ROOT.eq_amm_a
+			distribution = uniform
+			min = 1
+			max = 10
+		}
+		randomize_variable = {
+			var = ROOT.eq_pro_a
+			distribution = uniform
+			min = 1
+			max = 3
+		}
+
+		# Equipment design B	
+		# Equipment upgrades are currently random
+		randomize_variable = {
+			var = ROOT.eq_rel_b
+			distribution = uniform
+			min = 1
+			max = 10
+		}
+		randomize_variable = {
+			var = ROOT.eq_acc_b
+			distribution = uniform
+			min = 1
+			max = 10
+		}
+		randomize_variable = {
+			var = ROOT.eq_amm_b
+			distribution = uniform
+			min = 1
+			max = 10
+		}
+		randomize_variable = {
+			var = ROOT.eq_pro_b
+			distribution = uniform
+			min = 1
+			max = 3
+		}
+
+	}
+	option = {
+		name = equipment_design.0.a
+		custom_effect_tooltip = "equipment_design.0.a.tt"
+		set_variable = { ROOT.designer = 0 }
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					name = [EQ_NAME]
+					type = [EQ_TYPE]_[EQ_LEVEL]
+					upgrades = {
+						rifle_reliability_upgrade = [EQ_REL]
+						rifle_accuracy_upgrade = [EQ_ACC]
+						rifle_ammunition_upgrade = [EQ_AMM]
+						rifle_production_upgrade = [EQ_PRO]
+					}
+				}
+			}
+			EQ_NAME = "[GetServiceRifleName]"
+			EQ_LEVEL = "[?ROOT.eq_level|.0]"
+			EQ_TYPE = "service_rifle"
+			EQ_REL = "[?ROOT.eq_rel_a|.0]"
+			EQ_ACC = "[?ROOT.eq_acc_a|.0]"
+			EQ_AMM = "[?ROOT.eq_amm_a|.0]"
+			EQ_REL = "[?ROOT.eq_rel_a|.0]"
+		}
+		clr_country_flag = requested_service_rifle_design
+	}
+	option = {
+		name = equipment_design.0.b
+		custom_effect_tooltip = "equipment_design.0.b.tt"
+		set_variable = { ROOT.designer = 1 }
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					name = [EQ_NAME]
+					type = [EQ_TYPE]_[EQ_LEVEL]
+					upgrades = {
+						rifle_reliability_upgrade = [EQ_REL]
+						rifle_accuracy_upgrade = [EQ_ACC]
+						rifle_ammunition_upgrade = [EQ_AMM]
+						rifle_production_upgrade = [EQ_PRO]
+					}
+				}
+			}
+			EQ_NAME = "[GetServiceRifleName]"
+			EQ_LEVEL = "[?ROOT.eq_level|.0]"
+			EQ_TYPE = "service_rifle"
+			EQ_REL = "[?ROOT.eq_rel_b|.0]"
+			EQ_ACC = "[?ROOT.eq_acc_b|.0]"
+			EQ_AMM = "[?ROOT.eq_amm_b|.0]"
+			EQ_REL = "[?ROOT.eq_rel_b|.0]"
+		}
+		clr_country_flag = requested_service_rifle_design
+	}
+}

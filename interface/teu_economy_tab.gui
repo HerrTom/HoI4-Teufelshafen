@@ -1,0 +1,615 @@
+@slider_mid = 263
+@slider_min = 30
+@slider_max = 466
+@track_min = 53 # button is 23 pixels wide
+@track_width = 413
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "countryeconomyview"
+		position = { x=-606 y=78}	
+		show_position = { x=-6 y =78 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300	
+		size = { width=550 height=100%% }
+		
+		#hide_sound = menu_close_window
+		show_sound = menu_open_window
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_plain_bg"
+		}
+		background = {
+			name = "border"		
+			quadTextureSprite ="GFX_fullborder_tiled"
+		}
+
+		iconType ={
+			name ="production_header_bg"
+			spriteType = "GFX_header_bg"
+			position = { x= 5 y = 07 }
+			Orientation = "UPPER_LEFT"
+		}	
+
+		instantTextboxType = {
+			name = "economy_window_title"
+			position = { x = 45 y = 8 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "ECONOMY"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}		
+		containerWindowType = {
+			name = econ_general_container
+			# position = { x = 36 y = 330 }
+			position = { x = 12 y = 45 }
+			size = { width=526 height=210 }
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_construction_province_background"
+			}
+			containerWindowType = {
+				name = econ_GDP_bg
+				position = { x = 0 y = 40 }
+				size = { width=526 height=40 }
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_mini_bg"
+				}
+				instantTextboxType = {
+					name = "econ_GDP_header"
+					position = { x = 0 y = 5 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "GDP:"
+					format = right
+					maxWidth = 326
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_gdp_text"
+					position = { x = 326 y = 5 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "GDP_top_bar"
+					format = center
+					maxWidth = 200
+					maxHeight = 20
+					fixedsize = yes
+				}
+			}
+			containerWindowType = {
+				name = econ_tax_rate_bg
+				position = { x = 0 y = 80 }
+				size = { width=526 height=40 }
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_mini_bg"
+				}
+				instantTextboxType = {
+					name = "econ_expenses_header"
+					position = { x = 0 y = 5 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "Overall Tax Rate:"
+					format = right
+					maxWidth = 326
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_expenses_text"
+					position = { x = 326 y = 5 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "22%"
+					format = center
+					maxWidth = 200
+					maxHeight = 20
+					fixedsize = yes
+				}
+			}
+			containerWindowType = {
+				name = econ_tax_income_bg
+				position = { x = 0 y = 120 }
+				size = { width=526 height=40 }
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_mini_bg"
+				}
+				instantTextboxType = {
+					name = "econ_tax_income_header"
+					position = { x = 0 y = 5 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "Income from taxes:"
+					format = right
+					maxWidth = 326
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_tax_income_text"
+					position = { x = 326 y = 5 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "panel_tax_income"
+					format = center
+					maxWidth = 200
+					maxHeight = 20
+					fixedsize = yes
+				}
+			}
+
+			containerWindowType = {
+				name = econ_expenses_bg
+				position = { x = 0 y = 160 }
+				size = { width=526 height=40 }
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_mini_bg"
+				}
+				instantTextboxType = {
+					name = "econ_expenses_header"
+					position = { x = 0 y = 5 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "Total Expenses:"
+					format = right
+					maxWidth = 326
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_expenses_text"
+					position = { x = 326 y = 5 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "panel_total_expenses"
+					format = center
+					maxWidth = 200
+					maxHeight = 20
+					fixedsize = yes
+				}
+			}
+
+			iconType ={
+				name ="econ_general_bg"
+				spriteType = "GFX_header2"
+				# spriteType = "GFX_pol_win_idea_header"
+				position = { x = 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextboxType = {
+				name = "econ_general_header"
+				position = { x = 0 y = 0 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "GENERAL"
+				format = center
+				maxWidth = 526
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			
+		}
+		
+		containerWindowType = {
+			name = econ_budget_container
+			# position = { x = 36 y = 330 }
+			position = { x = 12 y = 250 }
+			size = { width=526 height=99%% }
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_construction_province_background"
+			}
+			iconType ={
+				name ="econ_taxes_bg"
+				spriteType = "GFX_header2"
+				# spriteType = "GFX_pol_win_idea_header"
+				position = { x = 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextboxType = {
+				name = "econ_budget_header"
+				position = { x = 0 y = 0 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "BUDGET"
+				format = center
+				maxWidth = 526
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			containerWindowType = {
+				name = econ_funds_container
+				position = { x = 0 y = 40 }
+				size = { width=100%% height=80 }
+				
+			}
+			containerWindowType = {
+				name = econ_civil_spending_container
+				# position = { x = 36 y = 330 }
+				position = { x = 0 y = 160 }
+				size = { width=526 height=100 }
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_mini_bg_grey"
+				}
+				
+				# iconType ={
+				# 	name ="econ_civil_spending_bg"
+				# 	spriteType = "GFX_idea_entry_bg_3"
+				# 	position = { x = 0 y = 0 }
+				# 	Orientation = "UPPER_LEFT"
+				# }
+				instantTextboxType = {
+					name = "econ_civil_spending_title"
+					position = { x = 0 y = 10 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "panel_civil_budget_header"
+					format = center
+					maxWidth = 526
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_civil_spending_low"
+					position = { x = 26 y = 40 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 0}
+					text = "Austerity"
+					format = left
+					maxWidth = 100
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_civil_spending_high"
+					position = { x = 400 y = 40 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 0}
+					text = "Luxury"
+					format = right
+					maxWidth = 100
+					maxHeight = 20
+					fixedsize = yes
+				}
+				containerWindowType = {
+					name = "civil_slider_container"
+					# position = { x = 36 y = 330 }
+					position = { x = 0 y = 65 }
+					buttonType = {
+						name = "civil_track"
+						quadTextureSprite = "GFX_scroll_track_horisontal"
+						position = { x = @track_min y = 4 }
+						size = { width = @track_width height = 12 }
+						alwaystransparent = yes
+					}
+					buttonType = {
+						name = "civil_slider_decrease"
+						quadTextureSprite = "yearslider_leftbutton"
+						position = { x = @slider_min y = 0 }
+						clicksound = click_scroll
+					}
+					buttonType = {
+						name = "civil_slider_increase"
+						quadTextureSprite = "yearslider_rightbutton"
+						position = { x = @slider_max y = 0 }
+						clicksound = click_scroll
+					}
+					buttonType = {
+						name = "civil_slider"
+						quadTextureSprite = "GFX_scroll_drager"
+						position = { x = @slider_mid y = 3 }
+					}
+				}
+			}
+			containerWindowType = {
+				name = econ_army_spending_container
+				# position = { x = 36 y = 330 }
+				position = { x = 0 y = 260 }
+				size = { width=526 height=100 }
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_mini_bg_grey"
+				}
+				
+				# iconType ={
+				# 	name ="econ_army_spending_bg"
+				# 	spriteType = "GFX_idea_entry_bg_3"
+				# 	position = { x = 0 y = 0 }
+				# 	Orientation = "UPPER_LEFT"
+				# }
+				instantTextboxType = {
+					name = "econ_army_spending_title"
+					position = { x = 0 y = 10 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "panel_army_budget_header"
+					format = center
+					maxWidth = 526
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_army_spending_low"
+					position = { x = 26 y = 40 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 0}
+					text = "Austerity"
+					format = left
+					maxWidth = 100
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_army_spending_high"
+					position = { x = 400 y = 40 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 0}
+					text = "Luxury"
+					format = right
+					maxWidth = 100
+					maxHeight = 20
+					fixedsize = yes
+				}
+				containerWindowType = {
+					name = "army_slider_container"
+					# position = { x = 36 y = 330 }
+					position = { x = 0 y = 65 }
+					buttonType = {
+						name = "army_track"
+						quadTextureSprite = "GFX_scroll_track_horisontal"
+						position = { x = @track_min y = 4 }
+						size = { width = @track_width height = 12 }
+						alwaystransparent = yes
+					}
+					buttonType = {
+						name = "army_slider_decrease"
+						quadTextureSprite = "yearslider_leftbutton"
+						position = { x = @slider_min y = 0 }
+						clicksound = click_scroll
+					}
+					buttonType = {
+						name = "army_slider_increase"
+						quadTextureSprite = "yearslider_rightbutton"
+						position = { x = @slider_max y = 0 }
+						clicksound = click_scroll
+					}
+					buttonType = {
+						name = "army_slider"
+						quadTextureSprite = "GFX_scroll_drager"
+						position = { x = @slider_mid y = 3 }
+					}
+				}
+			}
+			containerWindowType = {
+				name = econ_naval_spending_container
+				# position = { x = 36 y = 330 }
+				position = { x = 0 y = 360 }
+				size = { width=526 height=100 }
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_mini_bg_grey"
+				}
+				instantTextboxType = {
+					name = "econ_naval_spending_title"
+					position = { x = 0 y = 10 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "panel_navy_budget_header"
+					format = center
+					maxWidth = 526
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_naval_spending_low"
+					position = { x = 26 y = 40 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 0}
+					text = "Austerity"
+					format = left
+					maxWidth = 100
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_naval_spending_high"
+					position = { x = 400 y = 40 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 0}
+					text = "Luxury"
+					format = right
+					maxWidth = 100
+					maxHeight = 20
+					fixedsize = yes
+				}
+				containerWindowType = {
+					name = "naval_slider_container"
+					# position = { x = 36 y = 330 }
+					position = { x = 0 y = 65 }
+					buttonType = {
+						name = "naval_track"
+						quadTextureSprite = "GFX_scroll_track_horisontal"
+						position = { x = @track_min y = 4 }
+						size = { width = @track_width height = 12 }
+						alwaystransparent = yes
+					}
+					buttonType = {
+						name = "naval_slider_decrease"
+						quadTextureSprite = "yearslider_leftbutton"
+						position = { x = @slider_min y = 0 }
+						clicksound = click_scroll
+					}
+					buttonType = {
+						name = "naval_slider_increase"
+						quadTextureSprite = "yearslider_rightbutton"
+						position = { x = @slider_max y = 0 }
+						clicksound = click_scroll
+					}
+					buttonType = {
+						name = "naval_slider"
+						quadTextureSprite = "GFX_scroll_drager"
+						position = { x = @slider_mid y = 3 }
+					}
+				}
+			}
+			containerWindowType = {
+				name = econ_research_spending_container
+				# position = { x = 36 y = 330 }
+				position = { x = 0 y = 460 }
+				size = { width=526 height=100 }
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_mini_bg_grey"
+				}
+				
+				# iconType ={
+				# 	name ="econ_research_spending_bg"
+				# 	spriteType = "GFX_idea_entry_bg_3"
+				# 	position = { x = 0 y = 0 }
+				# 	Orientation = "UPPER_LEFT"
+				# }
+				instantTextboxType = {
+					name = "econ_research_spending_title"
+					position = { x = 0 y = 10 }
+					textureFile = ""
+					font = "hoi_30header"
+					borderSize = {x = 0 y = 0}
+					text = "panel_research_budget_header"
+					format = center
+					maxWidth = 526
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_research_spending_low"
+					position = { x = 26 y = 40 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 0}
+					text = "Austerity"
+					format = left
+					maxWidth = 100
+					maxHeight = 20
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "econ_research_spending_high"
+					position = { x = 400 y = 40 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 0}
+					text = "Luxury"
+					format = right
+					maxWidth = 100
+					maxHeight = 20
+					fixedsize = yes
+				}
+				containerWindowType = {
+					name = "research_slider_container"
+					# position = { x = 36 y = 330 }
+					position = { x = 0 y = 65 }
+					buttonType = {
+						name = "research_track"
+						quadTextureSprite = "GFX_scroll_track_horisontal"
+						position = { x = @track_min y = 4 }
+						size = { width = @track_width height = 12 }
+						alwaystransparent = yes
+					}
+					buttonType = {
+						name = "research_slider_decrease"
+						quadTextureSprite = "yearslider_leftbutton"
+						position = { x = @slider_min y = 0 }
+						clicksound = click_scroll
+					}
+					buttonType = {
+						name = "research_slider_increase"
+						quadTextureSprite = "yearslider_rightbutton"
+						position = { x = @slider_max y = 0 }
+						clicksound = click_scroll
+					}
+					buttonType = {
+						name = "research_slider"
+						quadTextureSprite = "GFX_scroll_drager"
+						position = { x = @slider_mid y = 3 }
+					}
+				}
+			}
+			buttonType = {
+				name = "econ_request_new_equipment"
+				position = { x = 0 y = 560 }
+				Orientation = "UPPER_LEFT"
+				spriteType = "GFX_econ_button"
+				clicksound = click_close
+				oversound = ui_menu_over
+			}
+			instantTextboxType = {
+				name = "econ_request_new_equipment_txt"
+				position = { x = 0 y = 570 }
+				textureFile = ""
+				font = "hoi_30header"
+				borderSize = {x = 0 y = 0}
+				text = "panel_request_new_equipment"
+				format = center
+				maxWidth = 526
+				maxHeight = 20
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+		}
+		
+		
+		buttonType = {
+			name = "close_econ_button"
+			position = { x = -42 y = 9 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+}

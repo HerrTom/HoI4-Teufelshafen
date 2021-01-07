@@ -1,0 +1,10 @@
+﻿l_english:
+ category_engineering_projects: "Engineering Projects"
+ engineer_service_rifle: "Design trials for new service rifle"
+ # Specific equipment design events
+ equipment_design.0.t: "Service Rifle Trials Complete"
+ equipment_design.0.d: "Our companies have submitted final designs for our new service rifle. We are going to accept the design by:"
+ equipment_design.0.a: "[?ROOT.GetDesignerA]"
+ equipment_design.0.b: "[?ROOT.GetDesignerB]"
+ equipment_design.0.a.tt: "The [?ROOT.GetDesignerA] design has:\n Reliability [?ROOT.eq_rel_a|.0]\n Accuracy [?ROOT.eq_acc_a|.0]\n Ammunition [?ROOT.eq_amm_a|.0]\n Producability [?ROOT.eq_pro_a|.0]"
+ equipment_design.0.b.tt: "The [?ROOT.GetDesignerB] design has:\n Reliability [?ROOT.eq_rel_b|.0]\n Accuracy [?ROOT.eq_bcc_b|.0]\n Ammunition [?ROOT.eq_bmm_b|.0]\n Producability [?ROOT.eq_pro_b|.0]"

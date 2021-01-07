@@ -53,12 +53,7 @@ technologies = {
 
 		enable_equipments = {
 			 mortar_1
-		}
-				
-		path = {
-			leads_to_tech = tech_mortar_2
-			research_cost_coeff = 1
-		}		
+		}	
 
 		research_cost = 1.5
 		start_year = 1920

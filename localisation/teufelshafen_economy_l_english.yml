@@ -1,7 +1,0 @@
-﻿l_english:
- GDP_top_bar:0 "[ROOT.Get_Pretty_GDP]"
- GDP_top_thousands:0 "$[?GDP_thousand]k"
- GDP_top_millions:0 "$[?GDP]M"
- GDP_top_billions:0 "$[?GDP_billion]B"
- economy_GDP_short_tt:0 "Country GDP"
- economy_GDP_long_tt:0 "The total value of goods and services produced within the country"

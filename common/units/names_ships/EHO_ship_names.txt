@@ -1,0 +1,326 @@
+
+EHO_ROYAL = {
+	name = "Royal"
+	for_countries = { EHO }
+	prefix = "KKS "
+	type = ship
+	ship_types = { capital_ship ship_hull_heavy battleship battle_cruiser }
+	fallback_name = "Schlachtschiff %d"
+	ordered = {
+		1 = {"König"}
+		2 = {"Kurfürst"}
+		3 = {"Markgraf"}
+		4 = {"Graf von Reichen"}
+		5 = {"Heinsohn"}
+		6 = {"Von Moltke"}
+		7 = {"Von Hofhart"}
+		8 = {"Vochentzer"}
+		9 = {"Graf Schwarzbach"}
+		10 = {"Von Horburg"}
+		11 = {"Graf Balingen"}
+		12 = {"Kurfürst Bißler"}
+		13 = {"Andreas Wÿlhain"}
+		14 = {"Paul Winmann"}
+		15 = {"Hermann Meÿer"}
+		16 = {"Heinrich von Dormettingen"}
+		17 = {"Hermann von Moll"}
+	}
+}
+EHO_NORSE = {
+	name = "Gods"
+	for_countries = { EHO }
+	prefix = "KKS "
+	type = ship
+	ship_types = { ship_hull_heavy battleship battle_cruiser }
+	fallback_name = "Schlachtschiff %d"
+	ordered = {
+		1 = {"Heimdall"}
+		2 = {"Hildebrand"}
+		3 = {"Alcis"}
+		4 = {"Baldur"}
+		5 = {"Bragi"}
+		6 = {"Dellinger"}
+		7 = {"Forseti"}
+		8 = {"Freyr"}
+		9 = {"Donar"}
+		10 = {"Woden"}
+		11 = {"Tuisto"}
+		12 = {"Uller"}
+		13 = {"Badwahenna"}
+		14 = {"Oster"}
+		15 = {"Freyja"}
+		16 = {"Frigg"}
+		17 = {"Fulla"}
+		18 = {"Haeva"}
+		19 = {"Ran"}
+		20 = {"Vör"}
+		21 = {"Sunna"}
+		22 = {"Astrid"}
+		23 = {"Wieland"}
+		24 = {"Aurvandill"}
+		25 = {"Gaut"}
+		26 = {"Egil"}
+		27 = {"Wate"}
+		28 = {"Ingwë"}
+	}
+}
+EHO_MYTHS = {
+	name = "Mythical"
+	for_countries = { EHO }
+	prefix = "KKS "
+	type = ship
+	ship_types = { capital_ship ship_hull_cruiser heavy_cruiser light_cruiser }
+	fallback_name = "Schlachtschiff %d"
+	ordered = {
+		1 = {"Drache"}
+		2 = {"Mantikor"}
+		3 = {"Medusa"}
+		4 = {"Amazone"}
+		5 = {"Brummer"}
+		6 = {"Greif"}
+		7 = {"Nymphe"}
+		8 = {"Thetis"}
+		9 = {"Gefion"}
+		10 = {"Harpyie"}
+		11 = {"Oger"}
+		12 = {"Riese"}
+		13 = {"Sylphe"}
+		14 = {"Fee"}
+		15 = {"Troll"}
+		16 = {"Kentaur"}
+		17 = {"Einhorn"}
+		18 = {"Loreley"}
+		19 = {"Moosmann"}
+		20 = {"Näck"}
+		21 = {"Erdhenne"}
+		22 = {"Rasselbock"}
+		23 = {"Basilisk"}
+		24 = {"Behemoth"}
+		25 = {"Chimära"}
+		26 = {"Hydra"}
+		27 = {"Kerberos"}
+		28 = {"Phönix"}
+		29 = {"Roch"}
+		30 = {"Gargoyle"}
+		31 = {"Wasserfrau"}
+		32 = {"Dryade"}
+		33 = {"Urisk"}
+		34 = {"Puk"}
+	}
+}
+EHO_THEME_ANIMALS = {
+	name = NAME_THEME_ANIMALS
+
+	for_countries = { EHO }
+	prefix = "KKS "
+	type = ship
+	
+	fallback_name = "Schiff %d"
+
+	ordered = {
+		1 = {"Möwe"}
+		2 = {"Albatros"} 
+		3 = {"Seeadler"} 
+		4 = {"Greif"} 
+		5 = {"Falke"} 
+		6 = {"Kondor"} 
+		7 = {"Wolf"} 
+		8 = {"Iltis"} 
+		9 = {"Gepard"} 
+		10 = {"Panther"}
+		11 = {"Tiger"} 
+		12 = {"Löwe"}
+		13 = {"Luchs"}
+		14 = {"Bär"}
+		15 = {"Jaguar"}
+		16 = {"Leopard"}
+		17 = {"Kobra"}
+		18 = {"Viper"}
+		19 = {"Drache"}
+		20 = {"Wiesel"}
+		21 = {"Delphin"}
+		22 = {"Wal"}
+		23 = {"Rabe"}
+		24 = {"Habicht"}
+		25 = {"Wisent"}
+		26 = {"Puma"}
+		27 = {"Natter"}
+		28 = {"Otter"}
+		29 = {"Biber"}
+		30 = {"Bison"}
+		31 = {"Elch"}
+		32 = {"Dachs"}
+		33 = {"Hirsch"}
+		34 = {"Steinbock"}
+		35 = {"Zebra"}
+		36 = {"Hermelin"}
+		37 = {"Nerz"}
+		38 = {"Zobel"}
+		39 = {"Ozelot"}
+		40 = {"Hyäne"}
+		41 = {"Marder"}
+		42 = {"Reiher"}
+		43 = {"Fuchs"}
+		44 = {"Storch"}
+		45 = {"Kranich"}
+		46 = {"Kormoran"}
+		47 = {"Sperber"}
+		48 = {"Bussard"}
+		49 = {"Geier"}
+	}
+}
+EHO_THEME_FISH = {
+	name = NAME_THEME_FISH
+
+	for_countries = { EHO }
+
+	type = ship
+	prefix = "KKS "
+	fallback_name = "Schiff %d"
+
+	
+	ordered = {
+		1 = {"Zander"}
+		2 = {"Wels"} 
+		3 = {"Hering"} 
+		4 = {"Aal"} 
+		5 = {"Hecht"} 
+		6 = {"Flunder"} 
+		7 = {"Dorsch"} 
+		8 = {"Hai"} 
+		9 = {"Stachelrochen"} 
+		10 = {"Neunauge"}
+		11 = {"Bitterling"} 
+		12 = {"Lachs"}
+		24 = {"Barsch"}
+		13 = {"Kabeljau"}
+		14 = {"Forelle"}
+		15 = {"Stör"}
+		16 = {"Barbe"}
+		17 = {"Schleie"}
+		18 = {"Sardine"}
+		19 = {"Grundel"}
+		20 = {"Makrele"}
+		21 = {"Heilbutt"}
+		22 = {"Seezunge"}
+		23 = {"Knurrhahn"}
+	}
+}
+
+EHO_THEME_SPOOKY = {
+	name = "Spooky"
+
+	for_countries = { EHO }
+	
+	type = ship
+	ship_types = { screen_ship ship_hull_cruiser heavy_cruiser light_cruiser}
+	prefix = "KKS "
+	fallback_name = "Schiff %d"
+
+	ordered = {
+		1 = {"Hexe"}
+		2 = {"Poltergeist"}
+		3 = {"Nachtalb"}
+		4 = {"Nachzehrer"}
+		5 = {"Luftgeist"}
+		6 = {"Ghul"}
+		7 = {"Mittagsdämon"}
+		8 = {"Flaschengeist"}
+		9 = {"Dämon"}
+		10 = {"Irrlicht"}
+		11 = {"Werwolf"}
+		12 = {"Aufhocker"}
+		13 = {"Drude"}
+		14 = {"Schrat"}
+		15 = {"Bahkauv"}
+		16 = {"Lindwurm"}
+		17 = {"Klushund"}
+		18 = {"Gluhschwanz"}
+		19 = {"Draugr"}
+		20 = {"Golem"}
+	}
+}
+EHO_THEME_BIRDS = {
+	name = "Birds"
+
+	for_countries = { EHO }
+	
+	type = ship
+	ship_types = { screen_ship ship_hull_cruiser heavy_cruiser light_cruiser}
+	prefix = "KKS "
+	fallback_name = "Schiff %d"
+
+	ordered = {
+		1 = {"Albatros"}
+		2 = {"Seeadler"}
+		3 = {"Falke"}
+		4 = {"Kondor"}
+		5 = {"Skua"}
+		6 = {"Pelikan"}
+		7 = {"Fischadler"}
+		8 = {"Pinguin"}
+		9 = {"Petrel"}
+		10 = {"Eissturmvogel"}
+		11 = {"Bremse"}
+		12 = {"Tölpel"}
+		13 = {"Kormoran"}
+		14 = {"Fregattvogel"}
+		15 = {"Möwe"}
+		16 = {"Seeschwalbe"}
+		17 = {"Schwalbe"}
+		18 = {"Alk"}
+		19 = {"Vogel"}
+		20 = {"Adler"}
+		21 = {"Turmfalke"}
+		22 = {"Sperber"}
+		23 = {"Kolibri"}
+		24 = {"Taube"}
+		25 = {"Eichelhäher"}
+		26 = {"Schwalbe"}
+	}
+}
+
+EHO_THEME_CITIES = {
+	name = "Cities"
+
+	for_countries = { EHO }
+	
+	type = ship
+	ship_types = { screen_ship ship_hull_cruiser heavy_cruiser light_cruiser}
+	prefix = "KKS "
+	fallback_name = "Schiff %d"
+
+	ordered = {
+		1 = {"Altfurt"}
+		2 = {"Neustadt"}
+		3 = {"Dietsau"}
+		4 = {"Sortenow"}
+		5 = {"Westenfeld"}
+		6 = {"Siegfeld"}
+		7 = {"Niederhalden"}
+		8 = {"Blauhafen"}
+		9 = {"Salztal"}
+		10 = {"Herthal"}
+		11 = {"Frustfelde"}
+		12 = {"Grafsberg"}
+		13 = {"Mühlheim"}
+		14 = {"Schwarzenbuhl"}
+		15 = {"Großwindhut"}
+		16 = {"Dortsdatd"}
+		17 = {"Immenstein"}
+		18 = {"Augshof"}
+		19 = {"Glaachsen"}
+		20 = {"Suderney"}
+		21 = {"Sachspunkt"}
+	}
+}
+
+EHO_DESTROYERS = {
+	name = "Destroyers"
+
+	for_countries = { EHO }
+	
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	fallback_name = "Z.%d"
+}

@@ -1,0 +1,113 @@
+defined_text = {
+	name = Get_Pretty_GDP
+	text = {
+		trigger = {
+			check_variable = { GDP < 1 }
+		}
+		localization_key = GDP_top_thousands
+	}
+	text = {
+		trigger = {
+			check_variable = { GDP > 1000 }
+		}
+		localization_key = GDP_top_billions
+	}
+	text = {
+		localization_key = GDP_top_millions
+	}
+}
+defined_text = {
+	name = Get_Pretty_Debt
+	text = {
+		trigger = {
+			check_variable = { debt = 0 }
+		}
+		localization_key = debt_top_none
+	}
+	text = {
+		trigger = {
+			check_variable = { debt > -1 }
+		}
+		localization_key = debt_top_thousands
+	}
+	text = {
+		trigger = {
+			check_variable = { debt < 1000 }
+		}
+		localization_key = debt_top_billions
+	}
+	text = {
+		localization_key = debt_top_millions
+	}
+}
+
+
+defined_text = {
+	name = Get_Pretty_Treasury
+	text = {
+		trigger = {
+			check_variable = { treasury < -1000 }
+		}
+		localization_key = treasury_top_billions_negative
+	}
+	text = {
+		trigger = {
+			check_variable = { treasury < -1 }
+		}
+		localization_key = treasury_top_millions_negative
+	}
+	text = {
+		trigger = {
+			check_variable = { treasury < 0 }
+		}
+		localization_key = treasury_top_thousands_negative
+	}
+	text = {
+		trigger = {
+			check_variable = { treasury < 1 }
+		}
+		localization_key = treasury_top_thousands
+	}
+	text = {
+		
+		trigger = {
+			check_variable = { treasury < 1000 }
+		}
+		localization_key = treasury_top_millions
+	}
+	text = {
+		localization_key = treasury_top_billions
+	}
+}
+
+defined_text = {
+	name = Get_Pretty_State_GDP
+	text = {
+		trigger = {
+			check_variable = { state_GDP < 1 }
+		}
+		localization_key = GDP_state_thousands
+	}
+	text = {
+		trigger = {
+			check_variable = { state_GDP > 1000 }
+		}
+		localization_key = GDP_state_billions
+	}
+	text = {
+		localization_key = GDP_state_millions
+	}
+}
+
+defined_text = {
+	name = Get_Net_Income
+	text = {
+		trigger = {
+			check_variable = { net_income > 0 }
+		}
+		localization_key = net_income_positive
+	}
+	text = {
+		localization_key = net_income_negative
+	}
+}

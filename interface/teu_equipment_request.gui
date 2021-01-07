@@ -1,0 +1,178 @@
+guiTypes = {
+    containerWindowType = {
+        name = "equipment_request_window"
+        position = { x=-250 y=-250 }
+		size = { width=550 height=500 }
+		moveable = yes
+		Orientation = CENTER
+		hide_sound = menu_close_window
+
+		background = {
+			name = "Background"
+			spriteType ="GFX_tiled_window_1b_border"
+		}
+		containerWindowType = {
+			name = "equipment_request_grid_container"
+			position = { x = 0 y = 40 }
+			size = {width = 550 height = 100%% } 
+			margin = { top = 10 bottom = 10 }
+			verticalScrollbar = "right_vertical_slider"
+
+			# background is necesarry for scrollbars to work
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+			}
+
+			buttonType = {
+				name = "equipment_request_service_rifle"
+				position = {x = 5 y = 0 }
+				spriteType = "GFX_econ_equipment_button"
+				scale = 0.99
+				clicksound = click_close
+				oversound = ui_menu_over
+			}
+			iconType ={
+				name ="equipment_request_service_rifle_icon"
+				spriteType = "archetype_service_rifle"
+				position = { x= 50 y = 0 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "equipment_request_service_rifle_text"
+				text = "request_service_rifle_text"
+				position = {x = 250 y = 10 }
+				font = "hoi_24header"
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "equipment_request_machine_gun"
+				position = {x = 5 y = 50 }
+				spriteType = "GFX_econ_equipment_button"
+				scale = 0.99
+				clicksound = click_close
+				oversound = ui_menu_over
+			}
+			iconType ={
+				name ="equipment_request_machine_gun_icon"
+				spriteType = "archetype_machine_gun"
+				position = { x= 65 y = 60 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+				scale = 0.75
+			}
+			instantTextBoxType = {
+				name = "equipment_request_machine_gun_text"
+				text = "Machine Gun"
+				position = {x = 250 y = 60 }
+				font = "hoi_24header"
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "equipment_request_mortar"
+				position = {x = 5 y = 100 }
+				spriteType = "GFX_econ_equipment_button"
+				scale = 0.99
+				clicksound = click_close
+				oversound = ui_menu_over
+			}
+			iconType ={
+				name ="equipment_request_mortar_icon"
+				spriteType = "archetype_mortar"
+				position = { x= 65 y = 105 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+				scale = 0.75
+			}
+			instantTextBoxType = {
+				name = "equipment_request_mortar_text"
+				text = "Mortar"
+				position = {x = 250 y = 110 }
+				font = "hoi_24header"
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "equipment_request_field_gun"
+				position = {x = 5 y = 150 }
+				spriteType = "GFX_econ_equipment_button"
+				scale = 0.99
+				clicksound = click_close
+				oversound = ui_menu_over
+			}
+			iconType ={
+				name ="equipment_request_field_gun_icon"
+				spriteType = "archetype_field_gun"
+				position = { x= 65 y = 155 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+				scale = 0.75
+			}
+			instantTextBoxType = {
+				name = "equipment_request_field_gun_text"
+				text = "Field Gun"
+				position = {x = 250 y = 160 }
+				font = "hoi_24header"
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "equipment_request_howitzer"
+				position = {x = 5 y = 200 }
+				spriteType = "GFX_econ_equipment_button"
+				scale = 0.99
+				clicksound = click_close
+				oversound = ui_menu_over
+			}
+			iconType ={
+				name ="equipment_request_howitzer_icon"
+				spriteType = "archetype_howitzer"
+				position = { x= 65 y = 205 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+				scale = 0.75
+			}
+			instantTextBoxType = {
+				name = "equipment_request_howitzer_text"
+				text = "Howitzer"
+				position = {x = 250 y = 210 }
+				font = "hoi_24header"
+				alwaystransparent = yes
+			}
+		}
+		
+		
+
+		iconType ={
+			name ="request_header_bg"
+			spriteType = "GFX_header_bg"
+			position = { x= 5 y = 07 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "equipment_request_header"
+			position = { x = 45 y = 8 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "REQUEST NEW EQUIPMENT"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}	
+		
+		buttonType = {
+			name = "close_equipment_button"
+			position = { x = -43 y = 9 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		
+	}
+}

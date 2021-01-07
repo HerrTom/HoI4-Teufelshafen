@@ -1,5 +1,5 @@
 sub_units = {
-	howitzer_battery = {
+	howitzer_company = {
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 0
@@ -10,8 +10,6 @@ sub_units = {
 		type = {
 			infantry
 			support
-            category_army
-            category_artillery
 		}
 		
 		group = support

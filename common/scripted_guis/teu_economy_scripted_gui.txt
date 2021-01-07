@@ -1,0 +1,137 @@
+scripted_gui = {
+	teufelshafen_econ = {
+		window_name = "top_GDP"
+		context_type = player_context
+		parent_window_token = top_bar
+		
+		effects = {
+			econ_button_click = {
+				if = {
+					limit = { has_country_flag = econ_view_enabled }
+					clr_country_flag = econ_view_enabled
+				}
+				else = {
+					set_country_flag = econ_view_enabled
+				}
+			}
+		}
+	}
+	
+	teufelshafen_state_econ = {
+		window_name = "state_economy_view"
+		context_type = selected_state_context
+		parent_window_token = selected_state_view
+	}
+	
+	teufelshafen_econ_view = {
+		window_name = "countryeconomyview"
+		context_type = player_context
+		# parent_window_token = top_bar
+		visible = {
+			has_country_flag = econ_view_enabled
+		}
+		effects = {
+			close_econ_button_click = {
+				clr_country_flag = econ_view_enabled
+			}
+			econ_request_new_equipment_click = {
+				set_country_flag = show_equipment_request
+			}
+
+			## civil slider effects
+			civil_slider_increase_click = {
+				add_to_variable = { civil_slider_pos = 40 } # step of 40 is 10 total
+				clamp_variable = {
+					var = civil_slider_pos
+					min = 50
+					max = 450
+				}
+				calculate_monthly_expenses = yes
+			}
+			civil_slider_decrease_click = {
+				subtract_from_variable = { civil_slider_pos = 40 }
+				clamp_variable = {
+					var = civil_slider_pos
+					min = 50
+					max = 450
+				}
+				calculate_monthly_expenses = yes
+			}
+
+			## army slider effects
+			army_slider_increase_click = {
+				add_to_variable = { army_slider_pos = 40 } # step of 40 is 10 total
+				clamp_variable = {
+					var = army_slider_pos
+					min = 50
+					max = 450
+				}
+				calculate_monthly_expenses = yes
+			}
+			army_slider_decrease_click = {
+				subtract_from_variable = { army_slider_pos = 40 }
+				clamp_variable = {
+					var = army_slider_pos
+					min = 50
+					max = 450
+				}
+				calculate_monthly_expenses = yes
+			}
+
+			## navy slider effects
+			naval_slider_increase_click = {
+				add_to_variable = { naval_slider_pos = 40 } # step of 40 is 10 total
+				clamp_variable = {
+					var = naval_slider_pos
+					min = 50
+					max = 450
+				}
+				calculate_monthly_expenses = yes
+			}
+			naval_slider_decrease_click = {
+				subtract_from_variable = { naval_slider_pos = 40 }
+				clamp_variable = {
+					var = naval_slider_pos
+					min = 50
+					max = 450
+				}
+				calculate_monthly_expenses = yes
+			}
+
+			## research slider effects
+			research_slider_increase_click = {
+				add_to_variable = { research_slider_pos = 40 } # step of 40 is 10 total
+				clamp_variable = {
+					var = research_slider_pos
+					min = 50
+					max = 450
+				}
+				calculate_monthly_expenses = yes
+			}
+			research_slider_decrease_click = {
+				subtract_from_variable = { research_slider_pos = 40 }
+				clamp_variable = {
+					var = research_slider_pos
+					min = 50
+					max = 450
+				}
+				calculate_monthly_expenses = yes
+			}
+		}
+
+		properties = {
+			civil_slider = {
+				x = civil_slider_pos?250
+			}
+			army_slider = {
+				x = army_slider_pos?250
+			}
+			naval_slider = {
+				x = naval_slider_pos?250
+			}
+			research_slider = {
+				x = research_slider_pos?250
+			}
+		}
+	}
+}

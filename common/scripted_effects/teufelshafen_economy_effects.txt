@@ -1,20 +1,229 @@
+init_gui_variables = {
+    set_variable = { civil_slider_pos = 250 } # start at centre
+    set_variable = { army_slider_pos = 250 } # start at centre
+    set_variable = { naval_slider_pos = 250 } # start at centre
+    set_variable = { research_slider_pos = 250 } # start at centre
+}
+
 generate_state_GDP = {
     set_variable = { state_pop = state_population_k }
-    set_variable = { state_GDP = GDP_Capita?100 }
-    multiply_variable = { state_GDP = state_pop }
-    log = "[GetDateText]: generate_state_GDP@[THIS.GetName]: State GDP generated to [?state_GDP]"
+    if = {
+        limit = { NOT = { has_variable = GDP_Capita } }
+        set_variable = { GDP_Capita = 0.05 }
+        if = {
+            limit = { has_state_category = rural }
+            set_variable = { GDP_Capita = 0.1 }
+        }
+        else_if = {
+            limit = { has_state_category = town }
+            set_variable = { GDP_Capita = 0.3 }
+        }
+        else_if = {
+            limit = { has_state_category = large_town }
+            set_variable = { GDP_Capita = 0.4 }
+        }
+        else_if = {
+            limit = { has_state_category = city }
+            set_variable = { GDP_Capita = 0.5 }
+        }
+        else_if = {
+            limit = { has_state_category = large_city }
+            set_variable = { GDP_Capita = 0.8 }
+        }
+        else_if = {
+            limit = { has_state_category = metropolis }
+            set_variable = { GDP_Capita = 0.9 }
+        }
+        else_if = {
+            limit = { has_state_category = megalopolis }
+            set_variable = { GDP_Capita = 1.3 }
+        }
+    }
+    # This is in thousands per capita by default, so that when we use population in the thousands, we get GDP in Millions
+    # This represents the service sector and purely civilian sector of the economy here
+    set_variable = { state_GDP_development = GDP_Capita}
+    multiply_variable = { state_GDP_development = state_pop }
+
+    # This is the contribution of civilian factories to the economy
+    # Arms factories do not currently add to the economy
+    set_variable = { state_GDP_industry = industrial_complex_level }
+    multiply_variable = { state_GDP_industry = 42 } # income in millions per civilian factory
+
+    # Factor to reduce income by infrastructure (currently =  0.5 + 0.5*I) percent
+    set_variable = { state_GDP_infrastructure_factor = infrastructure_level }
+    multiply_variable = { state_GDP_infrastructure_factor = 0.05 } # ranges 0 to 10
+    add_to_variable = { state_GDP_infrastructure_factor = 0.5 }
+
+        
+    # Calculate the total GDP contribution by this state
+    set_variable = { state_GDP = state_GDP_development }
+    add_to_variable = { state_GDP = state_GDP_industry }
+    multiply_variable = { state_GDP = state_GDP_infrastructure_factor }
+    # log = "[GetDateText]: generate_state_GDP@[THIS.GetName]: State GDP generated: $[?state_GDP_development] for development, $[?state_GDP_industry] for industry, modified [?state_GDP_infrastructure_factor|%] infra"
+    set_variable = { state_GDP_thousand = state_GDP }
+    multiply_variable = { state_GDP_thousand = 1000 }
+    set_variable = { state_GDP_billion = state_GDP }
+    divide_variable = { state_GDP_billion = 1000 }
+    log = "[GetDateText]: generate_state_GDP@[THIS.GetName]: [?GDP_Capita] GDP/Capita -> [?state-GDP]"
 }
 
 calculate_GDP = {
     set_variable = { GDP = 0 }
 	every_owned_state = {
         add_to_variable = { PREV.GDP = state_GDP }
-        log = "[GetDateText]:      [THIS.GetName]: Added state GDP [?state_GDP] (for [PREV.GetName])"	
+        # log = "[GetDateText]:      [THIS.GetName]: Added state GDP $[?state_GDP]M (for [PREV.GetName])"	
     }
     set_variable = { GDP_thousand = GDP }
     multiply_variable = { GDP_thousand = 1000 }		
     set_variable = { GDP_billion = GDP }
     divide_variable = { GDP_billion = 1000 }
-    log = "[GetDateText]: calculate_GDP@[THIS.GetName]: Calculated GDP value: $[?GDP_thousand]k, $[?GDP]M, $[?GDP_billion]B"		
+    # log = "[GetDateText]: calculate_GDP@[THIS.GetName]: Calculated GDP value: $[?GDP_thousand]k, $[?GDP]M, $[?GDP_billion]B"
+
+}
+
+calculate_monthly_treasury = {
+    # Initialise the debt if it doesn't exist
+    if = {
+        limit = { NOT = { has_variable = debt } }
+        set_variable = { debt = 0 }
+    }
+    # log = "[GetDateText]: calculate_GDP@[THIS.GetName]: Start treasury: $[?treasury]M"
+    set_variable = { monthly_income = GDP }
+    divide_variable = { monthly_income = 12 } # Monthly income is 1/12 of yearly GDP
+    multiply_variable = { monthly_income = 0.22 } # 22% tax rate by default if not available
+    # add_to_variable = { treasury = monthly_income }
+    # subtract_from_variable = { treasury = monthly_expenses }
+    set_variable = { net_income = monthly_income }
+    subtract_from_variable = { net_income = monthly_expenses }
+
+    add_to_variable = { treasury = net_income }
+
+    if = {
+        limit = { check_variable = { net_income < 0 } }
+        add_to_variable = { debt = net_income }
+    }
+
+    ## Variables for pretty printing
+    set_variable = { treasury_thousand = treasury }
+    multiply_variable = { treasury_thousand = 1000 }
+    set_variable = { treasury_billion = treasury }
+    divide_variable = { treasury_billion = 1000 }
+    # Debt variables
+    set_variable = { debt_thousand = debt }
+    multiply_variable = { debt_thousand = 1000 }
+    set_variable = { debt_billion = debt }
+    divide_variable = { debt_billion = 1000 }
+
+    # log = "[GetDateText]: calculate_GDP@[THIS.GetName]:      Treasury + $[?monthly_income] - $[?monthly_expenses] = $[?treasury]M"   
+}
+
+calculate_monthly_expenses = {
+    set_variable = { monthly_expenses = 0 }
+    set_variable = { civilian_expenses = 0 }
+    set_variable = { army_expenses = 0 }
+    set_variable = { navy_expenses = 0 }
+
+    ### Calculation for civilian expenses
+    add_to_variable = { civilian_expenses = GDP }
+    divide_variable = { civilian_expenses = 12 }
+    multiply_variable = { civilian_expenses = 0.08 } # arbitrary right now
+
+    ### Calculation for army expenses by equipment type fielded
+    ### ToDo: Expand costs by equipment level?
+    # cost is in thousands per individual, multiplied out gives millions (consistent with other money values)
+    set_temp_variable = { rifles = num_equipment_in_armies_k@service_rifle }
+    multiply_temp_variable = { rifles = 0.03 } # .360 / 12 for monthly cost
+    set_temp_variable = { machine_guns = num_equipment_in_armies_k@machine_gun }
+    multiply_temp_variable = { machine_guns = 0.37 }
+    set_temp_variable = { mortars = num_equipment_in_armies_k@mortar }
+    multiply_temp_variable = { mortars = 0.36 }
+    set_temp_variable = { field_guns = num_equipment_in_armies_k@field_gun }
+    multiply_temp_variable = { field_guns = 0.57 }
+    set_temp_variable = { howitzers = num_equipment_in_armies_k@howitzer }
+    multiply_temp_variable = { howitzers = 0.68 }
+
+    add_to_variable = { army_expenses = rifles }
+    add_to_variable = { army_expenses = machine_guns }
+    add_to_variable = { army_expenses = mortars }
+    add_to_variable = { army_expenses = field_guns }
+    add_to_variable = { army_expenses = howitzers }
+
+    ### Calculation for navy expenses by ship fielded
+    set_temp_variable = { destroyers = num_ships_with_type@destroyer }
+    multiply_temp_variable = { destroyers = 0.017 }
+    set_temp_variable = { protected_cruisers = num_ships_with_type@light_cruiser }
+    multiply_temp_variable = { protected_cruisers = 0.140 }
+    set_temp_variable = { armoured_cruisers = num_ships_with_type@heavy_cruiser }
+    multiply_temp_variable = { armoured_cruisers = 0.180 }
+    set_temp_variable = { battleships = num_ships_with_type@battleship }
+    multiply_temp_variable = { battleships = 0.319 }
+    set_temp_variable = { battlecruisers = num_ships_with_type@battle_cruiser }
+    multiply_temp_variable = { battlecruisers = 0.723 }
+
+    add_to_variable = { navy_expenses = destroyers }
+    add_to_variable = { navy_expenses = protected_cruisers }
+    add_to_variable = { navy_expenses = armoured_cruisers }
+    add_to_variable = { navy_expenses = battleships }
+    add_to_variable = { navy_expenses = battlecruisers }
+
+    # Military production expenses
+    # Using £4 cost for 1900 model rifles (using Gewehr 98 historically)
+    # Translates to about 65 Imperial Marks here for .03 IC cost
+    # Conveniently, this translates to just over 1,000 Marks per factory! (1083)
+    # Factories produce (I think) 1 IC per week, so we multiply this by 52 / 12 to
+    #   get the monthly cost per factory
+    set_variable = { arms_production = num_of_military_factories }
+    subtract_from_variable = { arms_production = num_of_available_military_factories }
+    multiply_variable = { arms_production = 0.10 }
+
+    set_variable = { naval_production = 0 }
+
+    # use the civil_slider_pos to backout the army investment
+    set_variable = { civil_budget = civil_slider_pos?250 }
+    subtract_from_variable = { civil_budget = 50 } # 50 px offset
+    divide_variable = { civil_budget = 400 } # 400 px length of bar
+    multiply_variable = { civil_budget = 1.5 } # can double spending
+    # minimum is 50% spending
+    add_to_variable = { civil_budget = 0.5 }
+
+    # use the army_slider_pos to backout the army investment
+    set_variable = { army_budget = army_slider_pos?250 }
+    subtract_from_variable = { army_budget = 50 } # 50 px offset
+    divide_variable = { army_budget = 400 } # 400 px length of bar
+    multiply_variable = { army_budget = 4 } # can quadruple spending
+    # minimum is 100% spending
+    add_to_variable = { army_budget = 1 }
+    
+    # use the naval_slider_pos to backout the naval investment
+    set_variable = { naval_budget = naval_slider_pos?250 }
+    subtract_from_variable = { naval_budget = 50 } # 50 px offset
+    divide_variable = { naval_budget = 400 } # 400 px length of bar
+    multiply_variable = { naval_budget = 4 } # can quadruple spending
+    # minimum is 100% spending
+    add_to_variable = { naval_budget = 1 }
+
+    # use the research_slider_pos to backout the investment
+    set_variable = { research_budget = research_slider_pos?250 }
+    subtract_from_variable = { research_budget = 50 } # 50 px offset
+    divide_variable = { research_budget = 400 } # 400 px length of bar
+    # research_budget is now a percentage
+    multiply_variable = { research_budget = monthly_income }
+    divide_variable = { research_budget = 5 }
+
+
+    # Multipliers for expenses (probably temporary?)
+    multiply_variable = { civilian_expenses = civil_budget?1 }
+    multiply_variable = { army_expenses = army_budget?1 }
+    multiply_variable = { navy_expenses = naval_budget?1 }
+
+    add_to_variable = { monthly_expenses = civilian_expenses }
+    add_to_variable = { monthly_expenses = army_expenses }
+    add_to_variable = { monthly_expenses = navy_expenses }
+    add_to_variable = { monthly_expenses = arms_production }
+    add_to_variable = { monthly_expenses = naval_production }
+    add_to_variable = { monthly_expenses = research_budget }
+
+    set_variable = { net_income = monthly_income }
+    subtract_from_variable = { net_income = monthly_expenses }
 
 }

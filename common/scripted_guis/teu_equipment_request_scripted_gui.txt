@@ -1,0 +1,40 @@
+scripted_gui = {
+	teufelshafen_equipment = {
+		window_name = "equipment_request_window"
+		context_type = player_context
+		visible = {
+			has_country_flag = show_equipment_request
+		}
+		effects = {
+			close_equipment_button_click = {
+				clr_country_flag = show_equipment_request
+			}
+			equipment_request_service_rifle_click = {
+				randomize_variable = {
+					var = ROOT.service_rifle_design_days
+					distribution = binomial
+					min = 20 # optional
+					max = 30 # required if min is specified
+				}
+				# meta effect uses a random number of days for the design process
+				meta_effect = {
+					text = {
+						set_country_flag = {
+							flag = requested_service_rifle_design
+							days = [DESIGN_DAYS]
+							value = 1
+						}
+					}
+					DESIGN_DAYS = "[?ROOT.service_rifle_design_days|.0]"
+				}
+				
+				log = "Designing service rifle for [?service_rifle_design_days] days"
+			}
+		}
+		triggers = {
+			equipment_request_service_rifle_click_enabled = {
+				NOT = { has_country_flag = requested_service_rifle_design }
+			}
+		}
+	}
+}

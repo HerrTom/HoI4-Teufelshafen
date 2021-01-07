@@ -7,7 +7,24 @@ bookmarks = {
 		default_country = "EHO"
 		default = yes
 		
-		"EHO"={
+		"EHO" = {
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"UWS" = {
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+		}
+		"KHR" = {
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"GAN" = {
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			minor = yes
+		}
+		"---" = {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 		effect = {

@@ -1,30 +1,37 @@
 guiTypes = {
     containerWindowType = {
-        name = "top_GDP"
-        position = { x=981 y=0 }
-        size = { width=100%% height=100%% }
+        name = "state_economy_view"
+        position = { x=300 y=401 }
+		size = { width=100%% height=100%% }
 
         iconType = {
-            name ="top_GDP_bg"
+            name ="state_GDP_bg"
             spriteType = "GFX_generic_box_96"
             position = { x=0 y=5 }
             Orientation = "UPPER_LEFT"
         }
 
+        iconType = {
+			name ="state_GDP_icon"
+			spriteType = "GFX_GDP_icon"
+			position = { x=7 y=7 }
+			Orientation = "UPPER_LEFT"
+		}
+
         instantTextboxType = {
-            name = "top_GDP"
+            name = "state_GDP_value"
             position = { x = 22 y = 9 }
             textureFile = ""
             font = "hoi_18mbs"
             borderSize = {x = 0 y = 0}
-            text = "GDP_top_bar"
+            text = "GDP_state_display"
 
             maxWidth = 80
             maxHeight = 24
             format = center
 
-            pdx_tooltip = "economy_GDP_short_tt"
-            pdx_tooltip_delayed = "economy_GDP_long_tt"
+            pdx_tooltip = "GDP_state_short_tt"
+            pdx_tooltip_delayed = "GDP_state_long_tt"
         }
     }
 }

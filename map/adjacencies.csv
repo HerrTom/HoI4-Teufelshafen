@@ -1,2 +1,4 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
--1;-1;;-1;-1;-1;-1;-1;-1
+1896;7816;sea;1145;-1;-1;-1;-1;;Teufelshafen
+4185;7815;sea;1145;-1;-1;-1;-1;;Kirschworth
+-1;

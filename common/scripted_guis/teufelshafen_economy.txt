@@ -1,7 +1,0 @@
-scripted_gui = {
-	teufelshafen_econ = {
-		window_name = "top_GDP"
-		context_type = player_context
-        parent_window_token = top_bar
-    }
-}

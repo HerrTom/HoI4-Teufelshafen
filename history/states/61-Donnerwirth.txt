@@ -11,6 +11,7 @@ state={
 		owner= EHO
 		buildings = {
 			infrastructure = 2
+			7814 = { naval_base = 1 }
         }
     add_core_of= EHO
 	}

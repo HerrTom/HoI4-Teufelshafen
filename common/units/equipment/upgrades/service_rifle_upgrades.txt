@@ -1,0 +1,24 @@
+upgrades = {
+	rifle_reliability_upgrade = {
+		max_level = 10
+		cost = land
+		reliability = 0.05
+	}
+	rifle_accuracy_upgrade = {
+		max_level = 10
+		cost = land
+		soft_attack = 0.01
+		reliability = -0.02
+	}
+	rifle_ammunition_upgrade = {
+		max_level = 10
+		cost = land
+		hard_attack = 0.01
+		reliability = -0.02
+	}
+	rifle_production_upgrade = {
+		max_level = 3
+		cost = land
+		build_cost_ic = -0.01
+	}
+}

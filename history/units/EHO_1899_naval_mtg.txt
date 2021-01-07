@@ -1,0 +1,58 @@
+
+units= {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Kaiserliche Marine"			
+		naval_base = 1332 # Altfurt
+		task_force = {
+			name = "Heimatsflotte"
+			location = 1332 # Altfurt
+			ship = { name = "KKS König" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EHO version_name = "König Class" } } }
+			ship = { name = "KKS Kurfürfust" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EHO version_name = "König Class" } } }
+			ship = { name = "KKS Markgraf" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EHO version_name = "König Class" } } }
+			ship = { name = "KKS Heinsohn" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EHO version_name = "König Class" } } }
+			ship = { name = "KKS Hilderbrand" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EHO version_name = "Heimdall Class" } } }
+			ship = { name = "KKS Schwalbe" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = EHO version_name = "Schwalbe Class" } } }
+			ship = { name = "KKS Bussard" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = EHO version_name = "Schwalbe Class" } } }
+			ship = { name = "KKS Kondor" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = EHO version_name = "Schwalbe Class" } } }
+			ship = { name = "Z.1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.7" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.8" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.14" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.20" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+		}
+		task_force = {
+			name = "Nordseeflotte"
+			location = 1370 # Sortenow
+			ship = { name = "KKS Heimdall" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EHO version_name = "Heimdall Class" } } }
+			ship = { name = "KKS Baldur" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EHO version_name = "Heimdall Class" } } }
+			ship = { name = "KKS Seeadler" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = EHO version_name = "Schwalbe Class" } } }
+			ship = { name = "KKS Cormoran" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = EHO version_name = "Schwalbe Class" } } }
+			ship = { name = "KKS Geier" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = EHO version_name = "Schwalbe Class" } } }
+			ship = { name = "Z.5" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.6" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+		}
+		task_force = {
+			name = "Uberseesflotte"
+			location = 1896 # Teufelshafen
+			ship = { name = "KKS Hagen" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EHO version_name = "Heimdall Class" } } }
+			ship = { name = "KKS Graf von Reichen" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EHO version_name = "König Class" } } }
+			ship = { name = "KKS Adler" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = EHO version_name = "Schwalbe Class" } } }
+			ship = { name = "Z.12" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.13" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.15" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.16" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.17" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.18" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+			ship = { name = "Z.19" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EHO version_name = "Z85 Class" } } }
+		}
+	}
+} 
+

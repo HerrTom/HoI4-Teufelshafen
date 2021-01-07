@@ -6,11 +6,6 @@ propaganda_efforts = {
 	}
 }
 
-SAF_anti_colonialist_crusade = {
-	allowed = {
-		original_tag = SAF
-	}
-}
 
 war_measures = {
 	icon = generic_propaganda
@@ -122,4 +117,10 @@ special_projects = {
 	allowed = {
 		has_dlc = "Waking the Tiger"
 	}
+}
+
+### Teufelshafen categories
+category_engineering_projects ={ 
+	icon = GFX_decision_category_military_operation
+	priority = 100
 }
